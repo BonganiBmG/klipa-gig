@@ -219,10 +219,10 @@ a {
   color: #05264E;
 }
 a:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 a *:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 
 li.hr span {
@@ -664,7 +664,7 @@ h6 {
 }
 
 .color-brand-2 {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 
 .op-70 {
@@ -743,7 +743,7 @@ h6 {
   overflow: visible;
   border-radius: 10px;
   position: relative;
-  background-color: #3C65F5 !important;
+  background-color: #dc3c4d !important;
 }
 .box-progress-bar .progress .bg-brand-2 span {
   position: absolute;
@@ -758,7 +758,7 @@ h6 {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   position: absolute;
   top: -5px;
   right: -5px;
@@ -944,7 +944,7 @@ h6,
 }
 .btn.btn-default {
   color: #ffffff;
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   line-height: 26px;
   padding: 10px 25px;
 }
@@ -959,7 +959,7 @@ h6,
   gap: 10px;
   background: #E0E6F7;
   border-radius: 8px;
-  color: #3C65F5;
+  color: #dc3c4d;
   font-size: 14px;
   line-height: 14px;
 }
@@ -972,7 +972,7 @@ h6,
   color: #4F5E64 !important;
 }
 .btn-grey-small:hover {
-  color: #3C65F5 !important;
+  color: #dc3c4d !important;
 }
 
 .btn-grey-big {
@@ -986,12 +986,12 @@ h6,
   font-weight: 600;
 }
 .btn-grey-big:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 
 .btn-apply-now {
   background-color: #E0E6F7;
-  color: #3C65F5;
+  color: #dc3c4d;
   padding: 12px 10px;
   min-width: 95px;
   border-radius: 4px;
@@ -1000,7 +1000,7 @@ h6,
 }
 
 .btn-apply {
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   color: #ffffff;
   padding: 12px 20px;
   border-radius: 4px;
@@ -1018,7 +1018,7 @@ h6,
 }
 
 .btn-apply-big {
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   color: #ffffff;
   padding: 18px 35px;
   border-radius: 4px;
@@ -1067,7 +1067,7 @@ h6,
   padding: 3px 10px;
   background: #E0E6F7;
   border-radius: 5px;
-  color: #3C65F5;
+  color: #dc3c4d;
   min-width: 42px;
   font-size: 12px;
   line-height: 18px;
@@ -1077,7 +1077,7 @@ h6,
   padding: 6px 18px;
   color: #66789C;
   border-radius: 5px;
-  color: #3C65F5;
+  color: #dc3c4d;
   min-width: 42px;
   font-size: 12px;
   line-height: 18px;
@@ -1101,7 +1101,7 @@ h6,
   border-radius: 4px;
 }
 .btn-brand-1:hover {
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   color: #ffffff;
 }
 
@@ -1116,7 +1116,7 @@ h6,
   padding: 8px 16px;
   background: #66789C;
   border-radius: 5px;
-  color: #3C65F5;
+  color: #dc3c4d;
   min-width: 42px;
   font-size: 11px;
   color: #ffffff;
@@ -1129,7 +1129,7 @@ h6,
   line-height: 24px;
   color: #ffffff;
   padding: 15px 28px 15px 60px;
-  background: #3C65F5 url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/company/icon-email.svg) no-repeat 25px 15px;
+  background: #dc3c4d url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/company/icon-email.svg) no-repeat 25px 15px;
   border-radius: 4px;
 }
 .btn-send-message:hover {
@@ -1206,12 +1206,12 @@ h6,
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 
 .btn-arrow-right {
   background: url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage2/arrow-right.svg) no-repeat right 15px top 3px;
-  color: #3C65F5;
+  color: #dc3c4d;
   padding: 0px 40px 0px 0px;
   font-size: 12px;
   line-height: 12px;
@@ -1297,7 +1297,7 @@ span.btn {
   margin-right: 4px;
 }
 .social-login:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
   box-shadow: 0px 10px 20px -5px rgba(10, 42, 105, 0.06);
 }
 
@@ -1333,7 +1333,7 @@ span.btn {
 }
 
 .cb-container input:checked ~ .checkmark {
-  border: 2px solid #3C65F5;
+  border: 2px solid #dc3c4d;
 }
 
 .checkmark:after {
@@ -1352,7 +1352,7 @@ span.btn {
   width: 21px;
   height: 22px;
   border-radius: 5px;
-  background: #3C65F5 url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/tick.svg) no-repeat center;
+  background: #dc3c4d url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/tick.svg) no-repeat center;
 }
 
 /*COMPONENTS -> FORM*/
@@ -1440,7 +1440,7 @@ textarea:focus {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 .contact-from-area .contact-form-style button:hover {
-  background-color: #3C65F5 !important;
+  background-color: #dc3c4d !important;
 }
 
 .form-group {
@@ -1591,7 +1591,7 @@ label {
 /*Customize the style representation when pager is activated*/
 .swiper-pagination-customs-active,
 .swiper-pagination-customs:hover {
-  background: #3C65F5;
+  background: #dc3c4d;
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -1761,7 +1761,7 @@ label {
 }
 
 .noUi-background {
-  background: #3C65F5;
+  background: #dc3c4d;
 }
 
 .noUi-origin {
@@ -1781,7 +1781,7 @@ label {
   top: -30px;
   font-size: 14px;
   line-height: 22px;
-  color: #3C65F5;
+  color: #dc3c4d;
   font-weight: 500;
 }
 
@@ -1800,7 +1800,7 @@ label {
   left: 5px;
   width: 9px;
   height: 9px;
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   border-radius: 50%;
 }
 
@@ -1867,7 +1867,7 @@ label {
   margin-left: 0;
 }
 .card-grid-2 .btn-apply-now {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 .card-grid-2:hover {
   border-color: #B4C0E0;
@@ -1875,14 +1875,14 @@ label {
 }
 .card-grid-2:hover .btn-apply-now {
   color: #ffffff;
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
 }
 .card-grid-2 a {
   text-decoration: none;
   color: #05264E;
 }
 .card-grid-2 a:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 .card-grid-2 .card-grid-2-image-rd {
   padding: 0px 15px 0px 0px;
@@ -1924,7 +1924,7 @@ label {
   align-items: center;
   padding: 0px 10px;
   height: 24px;
-  background: #3C65F5;
+  background: #dc3c4d;
   border-radius: 5px;
   color: #ffffff;
   min-width: 42px;
@@ -1989,7 +1989,7 @@ label {
   max-width: 100%;
 }
 .card-grid-2 .card-block-info .card-text-price {
-  color: #3C65F5;
+  color: #dc3c4d;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -2082,7 +2082,7 @@ label {
   display: block;
 }
 .card-grid-2 .card-grid-2-image-left .right-info .name-job:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 .card-grid-2 .card-grid-2-image-left .right-info .location-small {
   background: url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/location.svg) no-repeat 0px 5px;
@@ -2122,7 +2122,7 @@ label {
   height: 24px;
   background: #E0E6F7;
   border-radius: 5px;
-  color: #3C65F5;
+  color: #dc3c4d;
   min-width: 42px;
 }
 .card-image-top .image img {
@@ -2169,7 +2169,7 @@ label {
   color: #05264E;
 }
 .card-grid-3 h5 a:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 .card-grid-3 .card-block-info {
   display: inline-block;
@@ -2216,7 +2216,7 @@ label {
   background: url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/time.svg) no-repeat 0px 3px;
 }
 .card-grid-3 .card-block-info .card-text-price {
-  color: #3C65F5;
+  color: #dc3c4d;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -2295,7 +2295,7 @@ label {
   text-decoration: none;
 }
 .card-grid-4 .btn-readmore:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 
 .card-grid-5 {
@@ -2395,7 +2395,7 @@ label {
   display: inline-block;
   padding: 0px 35px 0px 0px;
   background: url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/arrow-right.svg) no-repeat right top 2px;
-  color: #3C65F5;
+  color: #dc3c4d;
   font-size: 14px;
   line-height: 22px;
 }
@@ -2421,7 +2421,7 @@ label {
   line-height: 26px;
   padding-top: 0px;
   display: inline-block;
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 .card-list-4 .card-price span {
   font-size: 12px;
@@ -2741,7 +2741,7 @@ ul li:last-child .card-list-4 {
 }
 
 .text-brand-2 {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 
 .w-lg-50 {
@@ -2897,12 +2897,12 @@ ul li:last-child .card-list-4 {
   color: #05264E;
 }
 .banner-hero .color-brand-2 {
-  color: #3C65F5;
+  color: #dc3c4d;
   position: relative;
 }
 .banner-hero .color-brand-2::after {
   content: "";
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   height: 25px;
   position: absolute;
   width: 100%;
@@ -2966,7 +2966,7 @@ ul li:last-child .card-list-4 {
   width: 100%;
   padding: 100px 0px 80px 0px;
   max-width: 100%;
-  background: url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage2/banner.png) no-repeat top center;
+  background: url(https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80) no-repeat top center;
   background-size: cover;
 }
 .banner-hero.hero-2::before {
@@ -3002,7 +3002,7 @@ ul li:last-child .card-list-4 {
   text-align: left;
 }
 .banner-hero.hero-3 {
-  background: #3C65F5;
+  background: #dc3c4d;
 }
 .banner-hero.hero-3::before {
   display: none;
@@ -3149,13 +3149,13 @@ ul li:last-child .card-list-4 {
   position: relative;
 }
 .header .main-menu li a:hover, .header .main-menu li a.active {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 .header .main-menu li a:hover::before, .header .main-menu li a.active::before {
   content: "";
   height: 2px;
   width: 100%;
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   position: absolute;
   bottom: -10px;
   left: 0px;
@@ -3241,7 +3241,7 @@ ul li:last-child .card-list-4 {
           text-decoration-line: underline;
 }
 .header .text-link-bd-btom:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 .header .block-signin .btn-shadow {
   box-shadow: 0px 18px 40px rgba(25, 15, 9, 0.1);
@@ -3277,10 +3277,10 @@ ul li:last-child .card-list-4 {
 }
 
 .header-brand-2 {
-  background: #3C65F5;
+  background: #dc3c4d;
 }
 .header-brand-2.sticky-bar.stick {
-  background: #3C65F5;
+  background: #dc3c4d;
 }
 .header-brand-2 .main-menu > li > a {
   color: #E0E6F6;
@@ -3307,14 +3307,14 @@ ul li:last-child .card-list-4 {
   background-color: #ffffff;
 }
 .header-brand-2 .main-menu li ul li a:hover {
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 .header-brand-2 .text-link-bd-btom {
   color: #ffffff;
 }
 .header-brand-2 .btn-default {
   background-color: #ffffff;
-  color: #3C65F5;
+  color: #dc3c4d;
   font-weight: 500;
 }
 
@@ -3893,7 +3893,7 @@ ul li:last-child .card-list-4 {
   border: 0;
   background-color: #fff;
   transition-duration: 0.2s;
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   background-image: url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/go-top.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -5528,7 +5528,7 @@ ul li:last-child .card-list-4 {
 .text-blue {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 20px;
-  color: #3C65F5;
+  color: #dc3c4d;
   font-weight: 600;
   line-height: 24px;
 }
@@ -5702,7 +5702,7 @@ ul li:last-child .card-list-4 {
   box-shadow: 0px 10px 20px -5px rgba(10, 42, 105, 0.06);
 }
 .block-pricing .box-pricing-item:hover .btn-border {
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   color: #ffffff;
 }
 .block-pricing .box-pricing-item .for-year,
@@ -5716,12 +5716,12 @@ ul li:last-child .card-list-4 {
   display: inline-block;
 }
 .block-pricing .box-pricing-item .btn-border {
-  border: 1px solid #3C65F5;
-  color: #3C65F5;
+  border: 1px solid #dc3c4d;
+  color: #dc3c4d;
   width: 100%;
 }
 .block-pricing .box-pricing-item .btn-border:hover {
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   color: #ffffff;
 }
 .block-pricing .box-info-price {
@@ -5732,7 +5732,7 @@ ul li:last-child .card-list-4 {
 }
 .block-pricing .box-info-price .text-price {
   font-size: 56px;
-  color: #3C65F5;
+  color: #dc3c4d;
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 56px;
   font-weight: 800;
@@ -6176,7 +6176,7 @@ ul li:last-child .card-list-4 {
   background-image: url(http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/editor.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #3C65F5;
+  background-color: #dc3c4d;
   position: absolute;
   bottom: 45px;
   right: 20px;
@@ -6885,7 +6885,7 @@ ul li:last-child .card-list-4 {
   line-height: 18px;
   border-radius: 7px;
   background: #E0E6F7;
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 
 .background-primary {
@@ -6930,7 +6930,7 @@ ul li:last-child .card-list-4 {
 
 .input-disabled {
   background-color: #ffffff !important;
-  border: 1px solid #3C65F5;
+  border: 1px solid #dc3c4d;
   padding: 0px 0px;
   text-align: center;
   height: 35px;
@@ -7017,7 +7017,7 @@ ul li:last-child .card-list-4 {
   background-color: #E0E6F7;
   border-radius: 50%;
   text-align: center;
-  color: #3C65F5;
+  color: #dc3c4d;
 }
 
 .sidebar-border-bg {
@@ -7195,8 +7195,8 @@ ul li:last-child .card-list-4 {
   margin-bottom: 10px;
 }
 .nav-tabs li a:hover, .nav-tabs li a.active {
-  color: #3C65F5;
-  border-color: #3C65F5;
+  color: #dc3c4d;
+  border-color: #dc3c4d;
   box-shadow: 0px 2px 4px -5px rgb(10, 42, 105);
 }
 .nav-tabs li a img {

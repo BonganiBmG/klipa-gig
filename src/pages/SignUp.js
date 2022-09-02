@@ -47,8 +47,8 @@ const SignUp = () => {
                                     <div className="text-muted text-center">Already have an account? <a href="page-signin.html">Sign in</a></div>
                                 </form>
                             </div>
-                            <div className="img-1 d-none d-lg-block"><img className="shape-1" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/login-register/img-1.svg" alt="JobBox" /></div>
-                            <div className="img-2"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/login-register/img-2.svg" alt="JobBox" /></div>
+                            <div className="img-1 d-none d-lg-block"><img className="shape-1" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/login-register/img-1.svg" alt="Klipa" /></div>
+                            <div className="img-2"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/login-register/img-2.svg" alt="Klipa" /></div>
                         </div>
                     </div>
                 </section>

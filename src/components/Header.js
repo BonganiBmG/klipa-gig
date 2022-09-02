@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../images/klipa1.png'
 
 const Header = () => {
     return (
@@ -7,7 +8,7 @@ const Header = () => {
                 <div className="container">
                     <div className="main-header">
                         <div className="header-left">
-                            <div className="header-logo"><a className="d-flex" href="index.html"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/jobhub-logo.svg"/></a></div>
+                            <div className="header-logo"><a className="d-flex" href="index.html"><img alt="jobBox" src={logo} width="150"/></a></div>
                         </div>
                         <div className="header-nav">
                             <nav className="nav-main-menu">

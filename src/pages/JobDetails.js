@@ -130,141 +130,141 @@ const JobDetails = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="sidebar-border">
-                                    <h6 class="f-18">Similar jobs</h6>
-                                    <div class="sidebar-list-job">
+                                <div className="sidebar-border">
+                                    <h6 className="f-18">Similar jobs</h6>
+                                    <div className="sidebar-list-job">
                                         <ul>
                                             <li>
-                                                <div class="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
-                                                    <div class="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></a></div>
-                                                    <div class="info-text">
-                                                        <h5 class="font-md font-bold color-brand-1"><a href="job-details.html">UI / UX Designer fulltime</a></h5>
-                                                        <div class="mt-0"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>3</span><span> mins ago</span></span></div>
-                                                        <div class="mt-5">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6 class="card-price">$250<span>/Hour</span></h6>
+                                                <div className="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
+                                                    <div className="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></a></div>
+                                                    <div className="info-text">
+                                                        <h5 className="font-md font-bold color-brand-1"><a href="job-details.html">UI / UX Designer fulltime</a></h5>
+                                                        <div className="mt-0"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>3</span><span> mins ago</span></span></div>
+                                                        <div className="mt-5">
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <h6 className="card-price">$250<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div class="col-6 text-end"><span class="card-briefcase">New York, US</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">New York, US</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
-                                                    <div class="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" /></a></div>
-                                                    <div class="info-text">
-                                                        <h5 class="font-md font-bold color-brand-1"><a href="job-details.html">Java Software Engineer</a></h5>
-                                                        <div class="mt-0"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>5</span><span> mins ago</span></span></div>
-                                                        <div class="mt-5">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6 class="card-price">$500<span>/Hour</span></h6>
+                                                <div className="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
+                                                    <div className="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" /></a></div>
+                                                    <div className="info-text">
+                                                        <h5 className="font-md font-bold color-brand-1"><a href="job-details.html">Java Software Engineer</a></h5>
+                                                        <div className="mt-0"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>5</span><span> mins ago</span></span></div>
+                                                        <div className="mt-5">
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <h6 className="card-price">$500<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div class="col-6 text-end"><span class="card-briefcase">Tokyo, Japan</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Tokyo, Japan</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
-                                                    <div class="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" /></a></div>
-                                                    <div class="info-text">
-                                                        <h5 class="font-md font-bold color-brand-1"><a href="job-details.html">Frontend Developer</a></h5>
-                                                        <div class="mt-0"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>8</span><span> mins ago</span></span></div>
-                                                        <div class="mt-5">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6 class="card-price">$650<span>/Hour</span></h6>
+                                                <div className="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
+                                                    <div className="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" /></a></div>
+                                                    <div className="info-text">
+                                                        <h5 className="font-md font-bold color-brand-1"><a href="job-details.html">Frontend Developer</a></h5>
+                                                        <div className="mt-0"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>8</span><span> mins ago</span></span></div>
+                                                        <div className="mt-5">
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <h6 className="card-price">$650<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div class="col-6 text-end"><span class="card-briefcase">Hanoi, Vietnam</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Hanoi, Vietnam</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
-                                                    <div class="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></a></div>
-                                                    <div class="info-text">
-                                                        <h5 class="font-md font-bold color-brand-1"><a href="job-details.html">Cloud Engineer</a></h5>
-                                                        <div class="mt-0"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>12</span><span> mins ago</span></span></div>
-                                                        <div class="mt-5">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6 class="card-price">$380<span>/Hour</span></h6>
+                                                <div className="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
+                                                    <div className="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></a></div>
+                                                    <div className="info-text">
+                                                        <h5 className="font-md font-bold color-brand-1"><a href="job-details.html">Cloud Engineer</a></h5>
+                                                        <div className="mt-0"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>12</span><span> mins ago</span></span></div>
+                                                        <div className="mt-5">
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <h6 className="card-price">$380<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div class="col-6 text-end"><span class="card-briefcase">Losangl, Au</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Losangl, Au</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
-                                                    <div class="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" /></a></div>
-                                                    <div class="info-text">
-                                                        <h5 class="font-md font-bold color-brand-1"><a href="job-details.html">DevOps Engineer</a></h5>
-                                                        <div class="mt-0"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>34</span><span> mins ago</span></span></div>
-                                                        <div class="mt-5">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6 class="card-price">$140<span>/Hour</span></h6>
+                                                <div className="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
+                                                    <div className="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" /></a></div>
+                                                    <div className="info-text">
+                                                        <h5 className="font-md font-bold color-brand-1"><a href="job-details.html">DevOps Engineer</a></h5>
+                                                        <div className="mt-0"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>34</span><span> mins ago</span></span></div>
+                                                        <div className="mt-5">
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <h6 className="card-price">$140<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div class="col-6 text-end"><span class="card-briefcase">Paris, France</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Paris, France</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
-                                                    <div class="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></a></div>
-                                                    <div class="info-text">
-                                                        <h5 class="font-md font-bold color-brand-1"><a href="job-details.html">Figma design UI/UX</a></h5>
-                                                        <div class="mt-0"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>45</span><span> mins ago</span></span></div>
-                                                        <div class="mt-5">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6 class="card-price">$290<span>/Hour</span></h6>
+                                                <div className="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
+                                                    <div className="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></a></div>
+                                                    <div className="info-text">
+                                                        <h5 className="font-md font-bold color-brand-1"><a href="job-details.html">Figma design UI/UX</a></h5>
+                                                        <div className="mt-0"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>45</span><span> mins ago</span></span></div>
+                                                        <div className="mt-5">
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <h6 className="card-price">$290<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div class="col-6 text-end"><span class="card-briefcase">New York, US</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">New York, US</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
-                                                    <div class="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" /></a></div>
-                                                    <div class="info-text">
-                                                        <h5 class="font-md font-bold color-brand-1"><a href="job-details.html">Product Manage</a></h5>
-                                                        <div class="mt-0"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>50</span><span> mins ago</span></span></div>
-                                                        <div class="mt-5">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6 class="card-price">$650<span>/Hour</span></h6>
+                                                <div className="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
+                                                    <div className="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" /></a></div>
+                                                    <div className="info-text">
+                                                        <h5 className="font-md font-bold color-brand-1"><a href="job-details.html">Product Manage</a></h5>
+                                                        <div className="mt-0"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>50</span><span> mins ago</span></span></div>
+                                                        <div className="mt-5">
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <h6 className="card-price">$650<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div class="col-6 text-end"><span class="card-briefcase">New York, US</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">New York, US</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
-                                                    <div class="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></a></div>
-                                                    <div class="info-text">
-                                                        <h5 class="font-md font-bold color-brand-1"><a href="job-details.html">UI / UX Designer</a></h5>
-                                                        <div class="mt-0"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>58</span><span> mins ago</span></span></div>
-                                                        <div class="mt-5">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6 class="card-price">$270<span>/Hour</span></h6>
+                                                <div className="card-list-4 wow animate__ animate__fadeIn hover-up animated" style={{ visibility: `visible`, animationName: `fadeIn` }}>
+                                                    <div className="image"><a href="job-details.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></a></div>
+                                                    <div className="info-text">
+                                                        <h5 className="font-md font-bold color-brand-1"><a href="job-details.html">UI / UX Designer</a></h5>
+                                                        <div className="mt-0"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>58</span><span> mins ago</span></span></div>
+                                                        <div className="mt-5">
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <h6 className="card-price">$270<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div class="col-6 text-end"><span class="card-briefcase">New York, US</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">New York, US</span></div>
                                                             </div>
                                                         </div>
                                                     </div>

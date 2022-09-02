@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../images/klipa1.png'
 
 const Footer = () => {
   return (
@@ -6,8 +7,8 @@ const Footer = () => {
         <footer className="footer mt-50">
       <div className="container">
         <div className="row">
-          <div className="footer-col-1 col-md-3 col-sm-12"><a href="index.html"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/jobhub-logo.svg"/></a>
-            <div className="mt-20 mb-20 font-xs color-text-paragraph-2">JobBox is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide.</div>
+          <div className="footer-col-1 col-md-3 col-sm-12"><a href="index.html"><img alt="jobBox" src={logo} width="150"/></a>
+            <div className="mt-20 mb-20 font-xs color-text-paragraph-2">Klipa is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide.</div>
             <div className="footer-social"><a className="icon-socials icon-facebook" href="#"></a><a className="icon-socials icon-twitter" href="#"></a><a className="icon-socials icon-linkedin" href="#"></a></div>
           </div>
           <div className="footer-col-2 col-md-2 col-xs-6">
@@ -54,7 +55,7 @@ const Footer = () => {
         </div>
         <div className="footer-bottom mt-50">
           <div className="row">
-            <div className="col-md-6"><span className="font-xs color-text-paragraph">Copyright © 2022. JobBox all right reserved</span></div>
+            <div className="col-md-6"><span className="font-xs color-text-paragraph">Copyright © 2022. Klipa all right reserved</span></div>
             <div className="col-md-6 text-md-end text-start">
               <div className="footer-social"><a className="font-xs color-text-paragraph" href="#">Privacy Policy</a><a className="font-xs color-text-paragraph mr-30 ml-30" href="#">Terms &amp; Conditions</a><a className="font-xs color-text-paragraph" href="#">Security</a></div>
             </div>
