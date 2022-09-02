@@ -35,11 +35,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -57,11 +57,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -79,11 +79,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -101,11 +101,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -123,11 +123,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,11 +145,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,11 +167,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -189,11 +189,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -211,11 +211,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -233,11 +233,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -255,11 +255,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -277,11 +277,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -303,11 +303,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -325,11 +325,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -347,11 +347,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -369,11 +369,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -391,11 +391,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -413,11 +413,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -435,11 +435,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -457,11 +457,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -479,11 +479,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -501,11 +501,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -523,11 +523,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -545,11 +545,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -571,11 +571,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -593,11 +593,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -615,11 +615,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -637,11 +637,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -659,11 +659,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -681,11 +681,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -703,11 +703,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -725,11 +725,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -747,11 +747,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -769,11 +769,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -791,11 +791,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -813,11 +813,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -839,11 +839,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -861,11 +861,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -883,11 +883,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -905,11 +905,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -927,11 +927,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -949,11 +949,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -971,11 +971,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -993,11 +993,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1015,11 +1015,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1037,11 +1037,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1059,11 +1059,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1081,11 +1081,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1107,11 +1107,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1129,11 +1129,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1151,11 +1151,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1173,11 +1173,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1195,11 +1195,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1217,11 +1217,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1239,11 +1239,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1261,11 +1261,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1283,11 +1283,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1305,11 +1305,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1327,11 +1327,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1349,11 +1349,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1375,11 +1375,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1397,11 +1397,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1419,11 +1419,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1441,11 +1441,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1463,11 +1463,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1485,11 +1485,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1507,11 +1507,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1529,11 +1529,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1551,11 +1551,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1573,11 +1573,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1595,11 +1595,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1617,11 +1617,11 @@ const TopJobs = () => {
                                                         <div className="col-lg-7 col-md-7">
                                                             <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
                                                                 <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">New York, US</span>
+                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">$200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
                                                     </div>
                                                 </div>
                                             </div>

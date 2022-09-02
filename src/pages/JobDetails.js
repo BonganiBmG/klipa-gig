@@ -38,7 +38,7 @@ const JobDetails = () => {
                                     <div className="row mt-25">
                                         <div className="col-md-6 d-flex mt-sm-15">
                                             <div className="sidebar-icon-item"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/job-single/salary.svg" alt="jobBox" /></div>
-                                            <div className="sidebar-text-info ml-10"><span className="text-description salary-icon mb-10">Salary</span><strong className="small-heading">$800 - $1000</strong></div>
+                                            <div className="sidebar-text-info ml-10"><span className="text-description salary-icon mb-10">Salary</span><strong className="small-heading">R800 - R1000</strong></div>
                                         </div>
                                         <div className="col-md-6 d-flex">
                                             <div className="sidebar-icon-item"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/job-single/experience.svg" alt="jobBox" /></div>
@@ -116,7 +116,7 @@ const JobDetails = () => {
                                     <div className="sidebar-heading">
                                         <div className="avatar-sidebar">
                                             <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/job-single/avatar.png" /></figure>
-                                            <div className="sidebar-info"><span className="sidebar-company">AliThemes</span><span className="card-location">New York, US</span><a className="link-underline mt-15" href="#">02 Open Jobs</a></div>
+                                            <div className="sidebar-info"><span className="sidebar-company">AliThemes</span><span className="card-location">Johannesburg, SA</span><a className="link-underline mt-15" href="#">02 Open Jobs</a></div>
                                         </div>
                                     </div>
                                     <div className="sidebar-list-job">
@@ -143,9 +143,9 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">$250<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R250<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div className="col-6 text-end"><span className="card-briefcase">New York, US</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Johannesburg, SA</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -160,9 +160,9 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">$500<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R500<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div className="col-6 text-end"><span className="card-briefcase">Tokyo, Japan</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Bedfordview, SA</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -177,7 +177,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">$650<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R650<span>/Hour</span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Hanoi, Vietnam</span></div>
                                                             </div>
@@ -194,7 +194,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">$380<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R380<span>/Hour</span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Losangl, Au</span></div>
                                                             </div>
@@ -211,7 +211,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">$140<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R140<span>/Hour</span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Paris, France</span></div>
                                                             </div>
@@ -228,9 +228,9 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">$290<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R290<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div className="col-6 text-end"><span className="card-briefcase">New York, US</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Johannesburg, SA</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -245,9 +245,9 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">$650<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R650<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div className="col-6 text-end"><span className="card-briefcase">New York, US</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Johannesburg, SA</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -262,9 +262,9 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">$270<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R270<span>/Hour</span></h6>
                                                                 </div>
-                                                                <div className="col-6 text-end"><span className="card-briefcase">New York, US</span></div>
+                                                                <div className="col-6 text-end"><span className="card-briefcase">Johannesburg, SA</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -290,7 +290,7 @@ const JobDetails = () => {
                                         <div className="card-grid-2 hover-up">
                                             <div className="card-grid-2-image-left"><span className="flash"></span>
                                                 <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">New York, US</span></div>
+                                                <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
                                             </div>
                                             <div className="card-block-info">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
@@ -300,7 +300,7 @@ const JobDetails = () => {
                                                 </div>
                                                 <div className="card-2-bottom mt-30">
                                                     <div className="row">
-                                                        <div className="col-lg-7 col-7"><span className="card-text-price">$800</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
                                                         <div className="col-lg-5 col-5 text-end">
                                                             <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                         </div>
@@ -312,7 +312,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Frontend Developer</a></h6>
@@ -322,7 +322,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -334,7 +334,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
@@ -344,7 +344,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -356,7 +356,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Frontend Developer</a></h6>
@@ -366,7 +366,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -379,7 +379,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Senior System Engineer</a></h6>
@@ -389,7 +389,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -402,7 +402,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Frontend Developer</a></h6>
@@ -412,7 +412,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -425,7 +425,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
@@ -435,7 +435,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -448,7 +448,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Frontend Developer</a></h6>
@@ -458,7 +458,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -471,7 +471,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Senior System Engineer</a></h6>
@@ -481,7 +481,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -493,7 +493,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Frontend Developer</a></h6>
@@ -503,7 +503,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -515,7 +515,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
@@ -525,7 +525,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -537,7 +537,7 @@ const JobDetails = () => {
                                             <div className="card-grid-2 hover-up">
                                                 <div className="card-grid-2-image-left"><span className="flash"></span>
                                                     <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">New York, US</span></div>
+                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
                                                 </div>
                                                 <div className="card-block-info">
                                                     <h6><a href="job-details.html">Frontend Developer</a></h6>
@@ -547,7 +547,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">$250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>

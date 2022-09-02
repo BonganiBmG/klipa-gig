@@ -8,22 +8,22 @@ const Header = () => {
                 <div className="container">
                     <div className="main-header">
                         <div className="header-left">
-                            <div className="header-logo"><a className="d-flex" href="index.html"><img alt="jobBox" src={logo} width="150"/></a></div>
+                            <div className="header-logo"><a className="d-flex" href="/"><img alt="jobBox" src={logo} width="150"/></a></div>
                         </div>
                         <div className="header-nav">
                             <nav className="nav-main-menu">
                                 <ul className="main-menu">
-                                    <li ><a className="active" href="index.html">Home</a>
+                                    <li ><a className="active" href="/">Home</a>
                                     </li>
                                     <li><a href="/jobs-grid">Find Jobs</a>
                                     </li>
-                                    <li><a href="companies-grid.html">Recruiters</a>
+                                    <li><a href="/companies">Companies</a>
                                     </li>
                                     <li><a href="/candidates">Candidates</a>
                                     </li>
-                                    <li><a href="blog-grid.html">Blog</a>
+                                    <li><a href="/blog">Blog</a>
                                     </li>
-                                    <li><a href="page-contact.html">Contact</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </nav>
                             <div className="burger-icon burger-icon-white"><span className="burger-icon-top"></span><span className="burger-icon-mid"></span><span className="burger-icon-bottom"></span></div>

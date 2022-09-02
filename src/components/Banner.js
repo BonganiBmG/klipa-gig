@@ -7,8 +7,7 @@ const Banner = () => {
         <div className="banner-hero hero-2">
           <div className="banner-inner">
             <div className="block-banner">
-              <h1 className="text-42 color-white wow animate__ animate__fadeInUp animated" style={{visibility: `visible`, animationame: `fadeInUp`}}>The #1 <span className="color-green">Job Board for</span><br className="d-none d-lg-block"/>Hiring or Find your next job</h1>
-              <div className="font-lg font-regular color-white mt-20 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>Each month, more than 3 million job seekers turn to website in their search for work, making over 140,000 applications every single day</div>
+              <h1 className="text-42 color-white wow animate__ animate__fadeInUp animated" style={{visibility: `visible`, animationame: `fadeInUp`}}>The #1 <span className="color-green">Gig Economy Online</span><br className="d-none d-lg-block"/>Hire or Find your next job</h1>
               <div className="form-find mt-40 wow animate__ animate__fadeIn animated" data-wow-delay=".2s" style={{visibility: `visible`, animationDelay: `0.2s`, animationName: `fadeIn`}}>
                 <form>
                   <div className="box-industry">
