@@ -1,6 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { register } from '../actions/userActions'
+import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [confirmPassword, setConfirmPassword] = useState('')
+    const [message, setMessage] = useState(null)
+    const nav = useNavigate();
+
+    const dispatch = useDispatch()
+
+    const userRegister = useSelector((state) => state.userRegister)
+    const { loading, error, userInfo } = userRegister
+
+    useEffect(() => {
+        if (userInfo) {
+            nav("/")
+        }
+    }, [userInfo])
+
+    const submitHandler = (e) => {
+        e.preventDefault()
+        if (password !== confirmPassword) {
+            setMessage('Passwords do not match')
+        } else {
+            dispatch(register(name, email, password))
+        }
+    }
+
     return (
         <div>
             <main className="main">
@@ -15,26 +45,34 @@ const SignUp = () => {
                                     <button className="btn social-login hover-up mb-20"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-google.svg" alt="jobbox" /><strong>Sign up with Google</strong></button>
                                     <div className="divider-text-center"><span>Or continue with</span></div>
                                 </div>
-                                <form className="login-register text-start mt-20" action="#">
+                                <form onSubmit={submitHandler} className="login-register text-start mt-20" action="#">
                                     <div className="form-group">
                                         <label className="form-label" for="input-1">Full Name *</label>
-                                        <input className="form-control" id="input-1" type="text" required="" name="fullname" placeholder="Steven Job" />
+                                        <input className="form-control" id="input-1" type="text" required="" name="fullname"
+                                            value={name}
+                                            onChange={(e) => setName(e.target.value)}
+                                            placeholder="Steven Job" />
                                     </div>
                                     <div className="form-group">
                                         <label className="form-label" for="input-2">Email *</label>
-                                        <input className="form-control" id="input-2" type="email" required="" name="emailaddress" placeholder="stevenjob@gmail.com" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label className="form-label" for="input-3">Username *</label>
-                                        <input className="form-control" id="input-3" type="text" required="" name="username" placeholder="stevenjob" />
+                                        <input className="form-control" id="input-2" type="email" required="" name="emailaddress"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            placeholder="stevenjob@gmail.com" />
                                     </div>
                                     <div className="form-group">
                                         <label className="form-label" for="input-4">Password *</label>
-                                        <input className="form-control" id="input-4" type="password" required="" name="password" placeholder="************" />
+                                        <input className="form-control" id="input-4" type="password" required="" name="password"
+                                            value={password}
+                                            onChange={(e) => setPassword(e.target.value)}
+                                            placeholder="************" />
                                     </div>
                                     <div className="form-group">
                                         <label className="form-label" for="input-5">Re-Password *</label>
-                                        <input className="form-control" id="input-5" type="password" required="" name="re-password" placeholder="************" />
+                                        <input className="form-control" id="input-5" type="password" required="" name="re-password"
+                                            value={confirmPassword}
+                                            onChange={(e) => setConfirmPassword(e.target.value)}
+                                            placeholder="************" />
                                     </div>
                                     <div className="login_footer form-group d-flex justify-content-between">
                                         <label className="cb-container">
