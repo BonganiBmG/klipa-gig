@@ -7,6 +7,7 @@ import {
     createJob,
 } from '../actions/jobActions'
 import { JOB_CREATE_RESET } from '../constants/jobConstants'
+import ReactTimeAgo from 'react-time-ago'
 
 const JobsGrid = ({ match }) => {
     //const pageNumber = match.params.pageNumber || 1
@@ -122,7 +123,7 @@ const JobsGrid = ({ match }) => {
                                                     </div>
                                                     <div className="card-block-info">
                                                         <h6><a href="/job-details">{job.title}</a></h6>
-                                                        <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
+                                                        <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
                                                         <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
                                                         <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
                                                         </div>

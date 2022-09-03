@@ -560,26 +560,6 @@ const JobDetails = () => {
                                 <div className="swiper-button-next swiper-button-next-4" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ba5abfe4b812dabc"></div>
                                 <div className="swiper-button-prev swiper-button-prev-4" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ba5abfe4b812dabc"></div>
                             </div>
-                            <div className="text-center"><a className="btn btn-grey" href="#">Load more posts</a></div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section-box mt-50 mb-20">
-                    <div className="container">
-                        <div className="box-newsletter">
-                            <div className="row">
-                                <div className="col-xl-3 col-12 text-center d-none d-xl-block"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/newsletter-left.png" alt="joxBox" /></div>
-                                <div className="col-lg-12 col-xl-6 col-12">
-                                    <h2 className="text-md-newsletter text-center">New Things Will Always<br /> Update Regularly</h2>
-                                    <div className="box-form-newsletter mt-40">
-                                        <form className="form-newsletter">
-                                            <input className="input-newsletter" type="text" value="" placeholder="Enter your email here" />
-                                            <button className="btn btn-default font-heading icon-send-letter">Subscribe</button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-12 text-center d-none d-xl-block"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/newsletter-right.png" alt="joxBox" /></div>
-                            </div>
                         </div>
                     </div>
                 </section>
