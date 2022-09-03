@@ -47,28 +47,28 @@ const SignUp = () => {
                                 </div>
                                 <form onSubmit={submitHandler} className="login-register text-start mt-20" action="#">
                                     <div className="form-group">
-                                        <label className="form-label" for="input-1">Full Name *</label>
+                                        <label className="form-label" htmlFor="input-1">Full Name *</label>
                                         <input className="form-control" id="input-1" type="text" required="" name="fullname"
                                             value={name}
                                             onChange={(e) => setName(e.target.value)}
                                             placeholder="Steven Job" />
                                     </div>
                                     <div className="form-group">
-                                        <label className="form-label" for="input-2">Email *</label>
+                                        <label className="form-label" htmlFor="input-2">Email *</label>
                                         <input className="form-control" id="input-2" type="email" required="" name="emailaddress"
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
                                             placeholder="stevenjob@gmail.com" />
                                     </div>
                                     <div className="form-group">
-                                        <label className="form-label" for="input-4">Password *</label>
+                                        <label className="form-label" htmlFor="input-4">Password *</label>
                                         <input className="form-control" id="input-4" type="password" required="" name="password"
                                             value={password}
                                             onChange={(e) => setPassword(e.target.value)}
                                             placeholder="************" />
                                     </div>
                                     <div className="form-group">
-                                        <label className="form-label" for="input-5">Re-Password *</label>
+                                        <label className="form-label" htmlFor="input-5">Re-Password *</label>
                                         <input className="form-control" id="input-5" type="password" required="" name="re-password"
                                             value={confirmPassword}
                                             onChange={(e) => setConfirmPassword(e.target.value)}

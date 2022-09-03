@@ -143,7 +143,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">R250<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R250<span></span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Johannesburg, SA</span></div>
                                                             </div>
@@ -160,7 +160,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">R500<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R500<span></span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Bedfordview, SA</span></div>
                                                             </div>
@@ -177,7 +177,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">R650<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R650<span></span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Hanoi, Vietnam</span></div>
                                                             </div>
@@ -194,7 +194,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">R380<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R380<span></span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Losangl, Au</span></div>
                                                             </div>
@@ -211,7 +211,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">R140<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R140<span></span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Paris, France</span></div>
                                                             </div>
@@ -228,7 +228,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">R290<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R290<span></span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Johannesburg, SA</span></div>
                                                             </div>
@@ -245,7 +245,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">R650<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R650<span></span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Johannesburg, SA</span></div>
                                                             </div>
@@ -262,7 +262,7 @@ const JobDetails = () => {
                                                         <div className="mt-5">
                                                             <div className="row">
                                                                 <div className="col-6">
-                                                                    <h6 className="card-price">R270<span>/Hour</span></h6>
+                                                                    <h6 className="card-price">R270<span></span></h6>
                                                                 </div>
                                                                 <div className="col-6 text-end"><span className="card-briefcase">Johannesburg, SA</span></div>
                                                             </div>
@@ -300,7 +300,7 @@ const JobDetails = () => {
                                                 </div>
                                                 <div className="card-2-bottom mt-30">
                                                     <div className="row">
-                                                        <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
                                                         <div className="col-lg-5 col-5 text-end">
                                                             <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                         </div>
@@ -322,7 +322,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -344,7 +344,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -366,7 +366,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -389,7 +389,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -412,7 +412,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -435,7 +435,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -458,7 +458,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -481,7 +481,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -503,7 +503,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -525,7 +525,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -547,7 +547,7 @@ const JobDetails = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>

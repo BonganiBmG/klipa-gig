@@ -39,7 +39,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -61,7 +61,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -83,7 +83,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -105,7 +105,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -127,7 +127,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -149,7 +149,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -171,7 +171,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -193,7 +193,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -215,7 +215,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -237,7 +237,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -259,7 +259,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -281,7 +281,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -307,7 +307,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -329,7 +329,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -351,7 +351,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -373,7 +373,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -395,7 +395,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -417,7 +417,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -439,7 +439,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -461,7 +461,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -483,7 +483,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -505,7 +505,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -527,7 +527,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -549,7 +549,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -575,7 +575,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -597,7 +597,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -619,7 +619,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -641,7 +641,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -663,7 +663,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -685,7 +685,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -707,7 +707,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -729,7 +729,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -751,7 +751,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -773,7 +773,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -795,7 +795,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -817,7 +817,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -843,7 +843,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -865,7 +865,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -887,7 +887,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -909,7 +909,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -931,7 +931,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -953,7 +953,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -975,7 +975,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -997,7 +997,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1019,7 +1019,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1041,7 +1041,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1063,7 +1063,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1085,7 +1085,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1111,7 +1111,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1133,7 +1133,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1155,7 +1155,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1177,7 +1177,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1199,7 +1199,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1221,7 +1221,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1243,7 +1243,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1265,7 +1265,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1287,7 +1287,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1309,7 +1309,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1331,7 +1331,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1353,7 +1353,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1379,7 +1379,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1401,7 +1401,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1423,7 +1423,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1445,7 +1445,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1467,7 +1467,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1489,7 +1489,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1511,7 +1511,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1533,7 +1533,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1555,7 +1555,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1577,7 +1577,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1599,7 +1599,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1621,7 +1621,7 @@ const TopJobs = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted">/Hour</span></div>
+                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>

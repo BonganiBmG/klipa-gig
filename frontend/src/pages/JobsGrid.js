@@ -70,7 +70,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -93,7 +93,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -116,7 +116,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -139,7 +139,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -162,7 +162,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -185,7 +185,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -208,7 +208,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -231,7 +231,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -254,7 +254,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -277,7 +277,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -300,7 +300,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -323,7 +323,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -346,7 +346,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -369,7 +369,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -392,7 +392,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -415,7 +415,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -438,7 +438,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
@@ -461,7 +461,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-2-bottom mt-30">
                                                         <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted">/Hour</span></div>
+                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
                                                             <div className="col-lg-5 col-5 text-end">
                                                                 <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
                                                             </div>
