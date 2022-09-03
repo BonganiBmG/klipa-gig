@@ -1,6 +1,67 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux'
+import {
+    listJobs,
+    deleteJob,
+    createJob,
+  } from '../actions/jobActions'
+import { JOB_CREATE_RESET } from '../constants/jobConstants'
 
-const JobsGrid = () => {
+const JobsGrid = ({ match }) => {
+    //const pageNumber = match.params.pageNumber || 1
+    const pageNumber = 1
+
+    const nav = useNavigate();
+    const dispatch = useDispatch()
+  
+    const jobList = useSelector((state) => state.jobList)
+    const { loading, error, jobs, page, pages } = jobList
+  
+    const jobDelete = useSelector((state) => state.jobDelete)
+    const {
+      loading: loadingDelete,
+      error: errorDelete,
+      success: successDelete,
+    } = jobDelete
+  
+    const jobCreate = useSelector((state) => state.jobCreate)
+    const {
+      loading: loadingCreate,
+      error: errorCreate,
+      success: successCreate,
+      job: createdJob,
+    } = jobCreate
+  
+    const userLogin = useSelector((state) => state.userLogin)
+    const { userInfo } = userLogin
+
+    useEffect(() => {
+        dispatch({ type: JOB_CREATE_RESET })
+    
+        if (!userInfo || !userInfo.isAdmin) {
+          nav('/signin')
+        }
+    
+        if (successCreate) {
+          nav(`/job/${createdJob._id}/edit`)
+        } else {
+          dispatch(listJobs('', pageNumber))
+        }
+      }, [
+        dispatch,
+        userInfo,
+        successDelete,
+        successCreate,
+        createdJob,
+        pageNumber,
+      ])
+
+    const createJobHandler = () => {
+        dispatch(createJob())
+    }
+
+    
     return (
         <div>
             <main className="main">
@@ -10,12 +71,8 @@ const JobsGrid = () => {
                             <div className="block-banner text-center">
                                 <h3 className="wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationName: `fadeInUp` }}><span className="color-brand-2">22 Jobs</span> Available Now</h3>
                                 <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{ visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp` }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, <br className="d-none d-xl-block" />atque delectus molestias quis?</div>
-                                <div className="form-find text-start mt-40 wow animate__ animate__fadeInUp animated" data-wow-delay=".2s" style={{ visibility: `visible`, animationDelay: `0.2s`, animationName: `fadeInUp` }}>
-                                    <form>
-                                        <input className="form-input input-keysearch mr-10" type="text" placeholder="I need a website" />
-                                        <button className="btn btn-default btn-find font-sm">Search</button>
-                                    </form>
-                                </div>
+
+                                <button onClick={createJobHandler} className="btn btn-default btn-find font-sm">Create A Job</button>
                             </div>
                         </div>
                     </div>
@@ -779,7 +836,7 @@ const JobsGrid = () => {
                                             <div className="card-block-info">
                                                 <div className="tags mb-15"><a className="btn btn-tag" href="blog-grid.html">News</a></div>
                                                 <h5><a href="blog-details.html">21 Job Interview Tips: How To Make a Great Impression</a></h5>
-                                                <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare products in iconic, sustainable packaging.</p>
+                                                <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare jobs in iconic, sustainable packaging.</p>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
                                                         <div className="col-lg-6 col-6">
@@ -799,7 +856,7 @@ const JobsGrid = () => {
                                                 <div className="card-block-info">
                                                     <div className="tags mb-15"><a className="btn btn-tag" href="blog-grid.html">Events</a></div>
                                                     <h5><a href="blog-details.html">39 Strengths and Weaknesses To Discuss in a Job Interview</a></h5>
-                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare products in iconic, sustainable packaging.</p>
+                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare jobs in iconic, sustainable packaging.</p>
                                                     <div className="card-2-bottom mt-20">
                                                         <div className="row">
                                                             <div className="col-lg-6 col-6">
@@ -840,7 +897,7 @@ const JobsGrid = () => {
                                                 <div className="card-block-info">
                                                     <div className="tags mb-15"><a className="btn btn-tag" href="blog-grid.html">News</a></div>
                                                     <h5><a href="blog-details.html">21 Job Interview Tips: How To Make a Great Impression</a></h5>
-                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare products in iconic, sustainable packaging.</p>
+                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare jobs in iconic, sustainable packaging.</p>
                                                     <div className="card-2-bottom mt-20">
                                                         <div className="row">
                                                             <div className="col-lg-6 col-6">
@@ -861,7 +918,7 @@ const JobsGrid = () => {
                                                 <div className="card-block-info">
                                                     <div className="tags mb-15"><a className="btn btn-tag" href="blog-grid.html">Events</a></div>
                                                     <h5><a href="blog-details.html">39 Strengths and Weaknesses To Discuss in a Job Interview</a></h5>
-                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare products in iconic, sustainable packaging.</p>
+                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare jobs in iconic, sustainable packaging.</p>
                                                     <div className="card-2-bottom mt-20">
                                                         <div className="row">
                                                             <div className="col-lg-6 col-6">
@@ -903,7 +960,7 @@ const JobsGrid = () => {
                                                 <div className="card-block-info">
                                                     <div className="tags mb-15"><a className="btn btn-tag" href="blog-grid.html">News</a></div>
                                                     <h5><a href="blog-details.html">21 Job Interview Tips: How To Make a Great Impression</a></h5>
-                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare products in iconic, sustainable packaging.</p>
+                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare jobs in iconic, sustainable packaging.</p>
                                                     <div className="card-2-bottom mt-20">
                                                         <div className="row">
                                                             <div className="col-lg-6 col-6">
@@ -923,7 +980,7 @@ const JobsGrid = () => {
                                                 <div className="card-block-info">
                                                     <div className="tags mb-15"><a className="btn btn-tag" href="blog-grid.html">Events</a></div>
                                                     <h5><a href="blog-details.html">39 Strengths and Weaknesses To Discuss in a Job Interview</a></h5>
-                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare products in iconic, sustainable packaging.</p>
+                                                    <p className="mt-10 color-text-paragraph font-sm">Our mission is to create the world&amp;rsquo;s most sustainable healthcare company by creating high-quality healthcare jobs in iconic, sustainable packaging.</p>
                                                     <div className="card-2-bottom mt-20">
                                                         <div className="row">
                                                             <div className="col-lg-6 col-6">

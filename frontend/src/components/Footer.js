@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer mt-50">
       <div className="container">
         <div className="row">
-          <div className="footer-col-1 col-md-3 col-sm-12"><a href="index.html"><img alt="jobBox" src={logo} width="150"/></a>
+          <div className="footer-col-1 col-md-3 col-sm-12"><a href="/"><img alt="jobBox" src={logo} width="150"/></a>
             <div className="mt-20 mb-20 font-xs color-text-paragraph-2">Klipa is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide.</div>
             <div className="footer-social"><a className="icon-socials icon-facebook" href="#"></a><a className="icon-socials icon-twitter" href="#"></a><a className="icon-socials icon-linkedin" href="#"></a></div>
           </div>
