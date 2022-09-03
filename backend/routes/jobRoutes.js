@@ -8,7 +8,7 @@ import {
   updateJob,
   createJobReview,
   getTopJobs,
-} from '../controllers/JobController.js'
+} from '../controllers/jobController.js'
 import { protect, admin } from '../middleware/authMiddleware.js'
 
 router.route('/').get(getJobs).post(protect, admin, createJob)
