@@ -5,7 +5,7 @@ import Job from '../models/jobModel.js'
 // @route   GET /api/Jobs
 // @access  Public
 const getJobs = asyncHandler(async (req, res) => {
-  const pageSize = 10
+  const pageSize = 12
   const page = Number(req.query.pageNumber) || 1
 
   const keyword = req.query.keyword
@@ -18,11 +18,11 @@ const getJobs = asyncHandler(async (req, res) => {
     : {}
 
   const count = await Job.countDocuments({ ...keyword })
-  const Jobs = await Job.find({ ...keyword })
+  const jobs = await Job.find({ ...keyword }).sort({ createdAt: -1})
     .limit(pageSize)
     .skip(pageSize * (page - 1))
 
-  res.json({ Jobs, page, pages: Math.ceil(count / pageSize) })
+  res.json({ jobs, page, pages: Math.ceil(count / pageSize) })
 })
 
 // @desc    Fetch single Job

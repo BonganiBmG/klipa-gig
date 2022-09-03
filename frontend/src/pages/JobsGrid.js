@@ -5,7 +5,7 @@ import {
     listJobs,
     deleteJob,
     createJob,
-  } from '../actions/jobActions'
+} from '../actions/jobActions'
 import { JOB_CREATE_RESET } from '../constants/jobConstants'
 
 const JobsGrid = ({ match }) => {
@@ -14,54 +14,54 @@ const JobsGrid = ({ match }) => {
 
     const nav = useNavigate();
     const dispatch = useDispatch()
-  
+
     const jobList = useSelector((state) => state.jobList)
     const { loading, error, jobs, page, pages } = jobList
-  
+
     const jobDelete = useSelector((state) => state.jobDelete)
     const {
-      loading: loadingDelete,
-      error: errorDelete,
-      success: successDelete,
+        loading: loadingDelete,
+        error: errorDelete,
+        success: successDelete,
     } = jobDelete
-  
+
     const jobCreate = useSelector((state) => state.jobCreate)
     const {
-      loading: loadingCreate,
-      error: errorCreate,
-      success: successCreate,
-      job: createdJob,
+        loading: loadingCreate,
+        error: errorCreate,
+        success: successCreate,
+        job: createdJob,
     } = jobCreate
-  
+
     const userLogin = useSelector((state) => state.userLogin)
     const { userInfo } = userLogin
 
     useEffect(() => {
         dispatch({ type: JOB_CREATE_RESET })
-    
+
         if (!userInfo || !userInfo.isAdmin) {
-          nav('/signin')
+            nav('/signin')
         }
-    
+
         if (successCreate) {
-          nav(`/job/${createdJob._id}/edit`)
+            nav(`/job/${createdJob._id}/edit`)
         } else {
-          dispatch(listJobs('', pageNumber))
+            dispatch(listJobs('', pageNumber))
         }
-      }, [
+    }, [
         dispatch,
         userInfo,
         successDelete,
         successCreate,
         createdJob,
         pageNumber,
-      ])
+    ])
 
     const createJobHandler = () => {
         dispatch(createJob())
     }
 
-    
+
     return (
         <div>
             <main className="main">
@@ -72,7 +72,7 @@ const JobsGrid = ({ match }) => {
                                 <h3 className="wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationName: `fadeInUp` }}><span className="color-brand-2">22 Jobs</span> Available Now</h3>
                                 <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{ visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp` }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, <br className="d-none d-xl-block" />atque delectus molestias quis?</div>
 
-                                <button onClick={createJobHandler} className="btn btn-default btn-find font-sm">Create A Job</button>
+                                <button onClick={createJobHandler} className="btn btn-default btn-find font-sm mt-50">Create A Job</button>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const JobsGrid = ({ match }) => {
                 <section className="section-box mt-30">
                     <div className="container">
                         <div className="row flex-row-reverse">
-                            <div className="col-lg-9 col-md-12 col-sm-12 col-12 float-right">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12 float-right">
                                 <div className="content-page">
                                     <div className="box-filters-job">
                                         <div className="row">
@@ -113,420 +113,31 @@ const JobsGrid = ({ match }) => {
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">UI / UX Designer fulltime</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                                        {jobs?.map((job) => (
+                                            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div className="card-grid-2 hover-up">
+                                                    <div className="card-grid-2-image-left"><span className="flash"></span>
+                                                        <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
+                                                        <div className="right-info"><a className="name-job" href="company-details.html">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
                                                     </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                                                    <div className="card-block-info">
+                                                        <h6><a href="/job-details">{job.title}</a></h6>
+                                                        <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
+                                                        <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                                                        <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                                                        </div>
+                                                        <div className="card-2-bottom mt-30">
+                                                            <div className="row">
+                                                                <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
+                                                                <div className="col-lg-5 col-5 text-end">
+                                                                    <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Submit Offer</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Adobe Ilustrator</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Full Stack Engineer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">React</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">NodeJS</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Bing Search</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Java Software Engineer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">AWS</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Frontend Developer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Typescript</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Java</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Linkedin</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">React Native Web Developer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Angular</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Senior System Engineer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="/job-details">PHP</a><a className="btn btn-grey-small mr-5" href="/job-details">Android</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Nintendo</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Products Manager</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="/job-details">ASP .Net</a><a className="btn btn-grey-small mr-5" href="/job-details">Figma</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Lead Quality Control QA</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="/job-details">iOS</a><a className="btn btn-grey-small mr-5" href="/job-details">Laravel</a><a className="btn btn-grey-small mr-5" href="/job-details">Golang</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">UI / UX Designer fulltime</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Adobe Ilustrator</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Full Stack Engineer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">React</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">NodeJS</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Bing Search</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Java Software Engineer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">AWS</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Frontend Developer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Typescript</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Java</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Linkedin</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">React Native Web Developer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Angular</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Senior System Engineer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="/job-details">PHP</a><a className="btn btn-grey-small mr-5" href="/job-details">Android</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Nintendo</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Products Manager</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="/job-details">ASP .Net</a><a className="btn btn-grey-small mr-5" href="/job-details">Figma</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Lead Quality Control QA</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="/job-details">iOS</a><a className="btn btn-grey-small mr-5" href="/job-details">Laravel</a><a className="btn btn-grey-small mr-5" href="/job-details">Golang</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">UI / UX Designer fulltime</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R500</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                            <div className="card-grid-2 hover-up">
-                                                <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                    <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" /></div>
-                                                    <div className="right-info"><a className="name-job" href="company-details.html">Adobe Ilustrator</a><span className="location-small">Johannesburg, SA</span></div>
-                                                </div>
-                                                <div className="card-block-info">
-                                                    <h6><a href="/job-details">Full Stack Engineer</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
-                                                    <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                    <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">React</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">NodeJS                            </a>
-                                                    </div>
-                                                    <div className="card-2-bottom mt-30">
-                                                        <div className="row">
-                                                            <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
-                                                            <div className="col-lg-5 col-5 text-end">
-                                                                <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        ))}
                                     </div>
                                 </div>
                                 <div className="paginations">
@@ -541,278 +152,6 @@ const JobsGrid = ({ match }) => {
                                         <li><a className="pager-number" href="#">7</a></li>
                                         <li><a className="pager-next" href="#"></a></li>
                                     </ul>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-12 col-sm-12 col-12">
-                                <div className="sidebar-shadow none-shadow mb-30">
-                                    <div className="sidebar-filters">
-                                        <div className="filter-block head-border mb-30">
-                                            <h5>Advance Filter <a className="link-reset" href="#">Reset</a></h5>
-                                        </div>
-                                        <div className="filter-block mb-30">
-                                            <div className="form-group select-style select-style-icon">
-                                                <select className="form-control form-icons select-active select2-hidden-accessible" data-select2-id="7" tabindex="-1" aria-hidden="true">
-                                                    <option data-select2-id="9">Johannesburg, SA</option>
-                                                    <option>London</option>
-                                                    <option>Paris</option>
-                                                    <option>Berlin</option>
-                                                </select><span className="select2 select2-container select2-container--default" dir="ltr" data-select2-id="8" style={{ width: `293.5px` }}><span className="selection"><span className="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-4bbu-container"><span className="select2-selection__rendered" id="select2-4bbu-container" role="textbox" aria-readonly="true" title="Johannesburg, SA">Johannesburg, SA</span><span className="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span className="dropdown-wrapper" aria-hidden="true"></span></span><i className="fi-rr-marker"></i>
-                                            </div>
-                                        </div>
-                                        <div className="filter-block mb-20">
-                                            <h5 className="medium-heading mb-15">Industry</h5>
-                                            <div className="form-group">
-                                                <ul className="list-checkbox">
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" checked="checked" /><span className="text-small">All</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">180</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Software</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">12</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Finance</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">23</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Recruting</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">43</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Management</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">65</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Advertising</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">76</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="filter-block mb-20">
-                                            <h5 className="medium-heading mb-25">Salary Range</h5>
-                                            <div className="list-checkbox pb-20">
-                                                <div className="row position-relative mt-10 mb-20">
-                                                    <div className="col-sm-12 box-slider-range">
-                                                        <div id="slider-range" className="noUi-target noUi-ltr noUi-horizontal noUi-background"><div className="noUi-base"><div className="noUi-origin noUi-stacking" style={{ left: `56%` }}><div className="noUi-handle noUi-handle-lower"><div className="noUi-tooltip">280</div></div></div></div></div>
-                                                    </div>
-                                                    <div className="box-input-money">
-                                                        <input className="input-disabled form-control min-value-money" type="text" name="min-value-money" disabled="disabled" value="" />
-                                                        <input className="form-control min-value" type="hidden" name="min-value" value="280" />
-                                                    </div>
-                                                </div>
-                                                <div className="box-number-money">
-                                                    <div className="row mt-30">
-                                                        <div className="col-sm-6 col-6"><span className="font-sm color-brand-1">R0</span></div>
-                                                        <div className="col-sm-6 col-6 text-end"><span className="font-sm color-brand-1">R500</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group mb-20">
-                                                <ul className="list-checkbox">
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" checked="checked" /><span className="text-small">All</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">145</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">R0k - R20k</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">56</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">R20k - R40k</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">37</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">R40k - R60k</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">75</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">R60k - R80k</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">98</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">R80k - R100k</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">14</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">R100k - R200k</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">25</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="filter-block mb-30">
-                                            <h5 className="medium-heading mb-10">Popular Keyword</h5>
-                                            <div className="form-group">
-                                                <ul className="list-checkbox">
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" checked="checked" /><span className="text-small">Software</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">24</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Developer</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">45</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Web</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">57</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="filter-block mb-30">
-                                            <h5 className="medium-heading mb-10">Position</h5>
-                                            <div className="form-group">
-                                                <ul className="list-checkbox">
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Senior</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">12</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" checked="checked" /><span className="text-small">Junior</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">35</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Fresher</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">56</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="filter-block mb-30">
-                                            <h5 className="medium-heading mb-10">Experience Level</h5>
-                                            <div className="form-group">
-                                                <ul className="list-checkbox">
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Internship</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">56</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Entry Level</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">87</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" checked="checked" /><span className="text-small">Associate</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">24</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Mid Level</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">45</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Director</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">76</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Executive</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">89</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="filter-block mb-30">
-                                            <h5 className="medium-heading mb-10">Onsite/Remote</h5>
-                                            <div className="form-group">
-                                                <ul className="list-checkbox">
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">On-site</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">12</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" checked="checked" /><span className="text-small">Remote</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">65</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Hybrid</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">58</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="filter-block mb-30">
-                                            <h5 className="medium-heading mb-10">Job Posted</h5>
-                                            <div className="form-group">
-                                                <ul className="list-checkbox">
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" checked="checked" /><span className="text-small">All</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">78</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">1 day</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">65</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">7 days</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">24</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">30 days</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">56</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="filter-block mb-20">
-                                            <h5 className="medium-heading mb-15">Job type</h5>
-                                            <div className="form-group">
-                                                <ul className="list-checkbox">
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Full Time</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">25</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" checked="checked" /><span className="text-small">Part Time</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">64</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Remote Jobs</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">78</span>
-                                                    </li>
-                                                    <li>
-                                                        <label className="cb-container">
-                                                            <input type="checkbox" /><span className="text-small">Freelancer</span><span className="checkmark"></span>
-                                                        </label><span className="number-item">97</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

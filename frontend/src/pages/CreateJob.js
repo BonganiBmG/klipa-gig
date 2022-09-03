@@ -30,7 +30,7 @@ const CreateJob = () => {
     useEffect(() => {
         if (successUpdate) {
             dispatch({ type: JOB_UPDATE_RESET })
-            nav("/jobs-grid")
+            //nav("/jobs-grid")
             //history.push('/admin/productlist')
         } else {
             if (!job.title || job._id !== jobId.id) {
