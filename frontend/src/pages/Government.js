@@ -10,7 +10,7 @@ const Government = () => {
           <div className="banner-hero banner-company">
             <div className="block-banner text-center">
               <img src={gov} alt="Government" className="mb-30"/>
-              <h3 className="wow animate__ animate__fadeInUp animated" style={{visibility: `visible`, animationName: `fadeInUp`}}>Browse Government</h3>
+              <h3 className="wow animate__ animate__fadeInUp animated" style={{visibility: `visible`, animationName: `fadeInUp`}}>Browse Government Opportunities</h3>
               <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, <br className="d-none d-xl-block"/>atque delectus molestias quis?</div>
               <div className="box-list-character">
                 <ul>
