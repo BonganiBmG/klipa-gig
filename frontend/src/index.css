@@ -7156,7 +7156,7 @@ ul li:last-child .card-list-4 {
   position: relative;
 }
 
-.login-register input {
+.login-register input select {
   height: 53px;
   line-height: 53px;
   font-size: 14px;

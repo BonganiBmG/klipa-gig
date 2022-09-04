@@ -61,9 +61,10 @@ const createJob = asyncHandler(async (req, res) => {
   const job = new Job({
     user: req.user._id,
     title: 'I need a website',
-    description: 'Sample description',
+    description: 'A basic one page website, with all business details',
     category: 'Default',
-    budget: 0
+    budget: 0,
+    deadline: "01/01/2023"
   })
 
   const createdJob = await job.save()
@@ -79,15 +80,19 @@ const updateJob = asyncHandler(async (req, res) => {
     description,
     category,
     budget,
+    deadline
   } = req.body
 
   const job = await Job.findById(req.params.id)
+
+  console.log(job)
 
   if (job) {
     job.title = title
     job.description = description
     job.category = category
     job.budget = budget
+    job.deadline = deadline
 
     const updatedJob = await job.save()
     res.json(updatedJob)

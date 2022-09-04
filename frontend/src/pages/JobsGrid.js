@@ -9,6 +9,7 @@ import {
 } from '../actions/jobActions'
 import { JOB_CREATE_RESET } from '../constants/jobConstants'
 import ReactTimeAgo from 'react-time-ago'
+import JobApply from '../components/JobApply';
 
 const JobsGrid = () => {
     //const pageNumber = match.params.pageNumber || 1
@@ -39,11 +40,11 @@ const JobsGrid = () => {
     const { userInfo } = userLogin
 
     useEffect(() => {
-        dispatch({ type: JOB_CREATE_RESET })
+        dispatch({ type: JOB_CREATE_RESET })        
 
-        if (!userInfo || !userInfo.isAdmin) {
-            nav('/signin')
-        }
+        // if (!userInfo || !userInfo.isAdmin) {
+        //     nav('/signin')
+        // }
 
         if (successCreate) {
             nav(`/job/${createdJob._id}/edit`)
@@ -60,19 +61,23 @@ const JobsGrid = () => {
     ])
 
     const createJobHandler = () => {
+         if (!userInfo || !userInfo.isAdmin) {
+            nav('/signin')
+        }
         dispatch(createJob())
     }
 
 
     return (
         <div>
+            <JobApply/>
             <main className="main">
                 <section className="section-box-2">
                     <div className="container">
                         <div className="banner-hero banner-single banner-single-bg">
                             <div className="block-banner text-center">
-                                <h3 className="wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationName: `fadeInUp` }}><span className="color-brand-2">22 Jobs</span> Available Now</h3>
-                                <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{ visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp` }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, <br className="d-none d-xl-block" />atque delectus molestias quis?</div>
+                                <h3 className="wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationName: `fadeInUp` }}><span className="color-brand-2">Jobs</span> Available Now</h3>
+                                <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{ visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp` }}>Explore the latest jobs, earn cash</div>
 
                                 <button onClick={createJobHandler} className="btn btn-default btn-find font-sm mt-50">Create A Job</button>
                             </div>
@@ -118,13 +123,10 @@ const JobsGrid = () => {
                                         {jobs?.map((job) => (
                                             <div key={job._id} className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                                 <div className="card-grid-2 hover-up">
-                                                    <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                        <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
-                                                        <div className="right-info"><a className="name-job" href="company-details.html">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
-                                                    </div>
+                                                    
                                                     <div className="card-block-info">
-                                                        <h6><Link to={`/job/${job._id}/detail`}>{job.title}</Link></h6>
-                                                        <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time"></span></div>
+                                                        <h6 className="mt-30"><Link to={`/job/${job._id}/detail`}>{job.title}</Link></h6>
+                                                       
                                                         <p className="font-sm color-text-paragraph mt-15">{job.description}</p>
                                                         <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
                                                         </div>
@@ -132,10 +134,14 @@ const JobsGrid = () => {
                                                             <div className="row">
                                                                 <div className="col-lg-7 col-7"><span className="card-text-price">R{job.budget}</span><span className="text-muted"></span></div>
                                                                 <div className="col-lg-5 col-5 text-end">
-                                                                    <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Submit Offer</div>
+                                                                    <a className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Submit Offer</a>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div className="card-grid-2-image-left"><span className="flash"></span>
+                                                        <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
+                                                        <div className="right-info"><a className="name-job" href="company-details.html">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
                                                     </div>
                                                 </div>
                                             </div>

@@ -25,11 +25,11 @@ const TopJobs = () => {
                         <p className="font-lg color-text-paragraph-2 wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Search and connect with the right candidates faster.</p>
                         <div className="list-tabs mt-40">
                             <ul className="nav nav-tabs" role="tablist">
-                                <li><a className="active" id="nav-tab-job-1" href="#tab-job-1" data-bs-toggle="tab" role="tab" aria-controls="tab-job-1" aria-selected="true"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/management.svg" alt="jobBox" /> Management</a></li>
+                                <li><a className="active" id="nav-tab-job-1" href="#tab-job-1" data-bs-toggle="tab" role="tab" aria-controls="tab-job-1" aria-selected="true"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/management.svg" alt="jobBox" /> Web Development</a></li>
                                 <li><a id="nav-tab-job-2" href="#tab-job-2" data-bs-toggle="tab" role="tab" aria-controls="tab-job-2" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/marketing.svg" alt="jobBox" /> Marketing &amp; Sale</a></li>
-                                <li><a id="nav-tab-job-3" href="#tab-job-3" data-bs-toggle="tab" role="tab" aria-controls="tab-job-3" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/finance.svg" alt="jobBox" /> Finance</a></li>
-                                <li><a id="nav-tab-job-4" href="#tab-job-4" data-bs-toggle="tab" role="tab" aria-controls="tab-job-4" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/human.svg" alt="jobBox" /> Human Resource</a></li>
-                                <li><a id="nav-tab-job-5" href="#tab-job-5" data-bs-toggle="tab" role="tab" aria-controls="tab-job-5" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/retail.svg" alt="jobBox" /> Retail &amp; jobs</a></li>
+                                <li><a id="nav-tab-job-3" href="#tab-job-3" data-bs-toggle="tab" role="tab" aria-controls="tab-job-3" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/finance.svg" alt="jobBox" />Graphic Design</a></li>
+                                <li><a id="nav-tab-job-4" href="#tab-job-4" data-bs-toggle="tab" role="tab" aria-controls="tab-job-4" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/human.svg" alt="jobBox" />Product Testing</a></li>
+                                <li><a id="nav-tab-job-5" href="#tab-job-5" data-bs-toggle="tab" role="tab" aria-controls="tab-job-5" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/retail.svg" alt="jobBox" />Promotions</a></li>
                                 <li><a id="nav-tab-job-6" href="#tab-job-6" data-bs-toggle="tab" role="tab" aria-controls="tab-job-6" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/content.svg" alt="jobBox" /> Content Writer</a></li>
                             </ul>
                         </div>
@@ -42,9 +42,12 @@ const TopJobs = () => {
                                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="card-grid-2 grid-bd-16 hover-up">
                                                 <div className="card-block-info pt-25">
-                                                    <h6><a href="job-details.html">{job.title}</a></h6>
-                                                    <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
-                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy                        </a>
+                                                    <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
+                                                   
+                                                    <div className="mb-20"><span className="card-briefcase mr-15">Remote</span><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+
+                                                    <span className="mt-40">{job.description}</span>
+                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                     </div>
                                                     <div className="card-2-bottom mt-20">
                                                         <div className="row">
@@ -71,7 +74,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy                        </a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -93,7 +96,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Swift</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -115,7 +118,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -137,7 +140,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -159,7 +162,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -181,7 +184,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -203,7 +206,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -225,7 +228,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -247,7 +250,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -269,7 +272,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -291,7 +294,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -313,7 +316,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -339,7 +342,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy                        </a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -361,7 +364,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Swift</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -383,7 +386,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -405,7 +408,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -427,7 +430,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -449,7 +452,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -471,7 +474,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -493,7 +496,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -515,7 +518,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -537,7 +540,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -559,7 +562,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -581,7 +584,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -607,7 +610,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy                        </a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -629,7 +632,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Swift</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -651,7 +654,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -673,7 +676,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -695,7 +698,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -717,7 +720,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -739,7 +742,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -761,7 +764,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -783,7 +786,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -805,7 +808,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -827,7 +830,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -849,7 +852,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -875,7 +878,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy                        </a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -897,7 +900,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Swift</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -919,7 +922,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -941,7 +944,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -963,7 +966,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -985,7 +988,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1007,7 +1010,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1029,7 +1032,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1051,7 +1054,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1073,7 +1076,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1095,7 +1098,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1117,7 +1120,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1143,7 +1146,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy                        </a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1165,7 +1168,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Swift</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1187,7 +1190,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1209,7 +1212,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1231,7 +1234,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1253,7 +1256,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1275,7 +1278,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1297,7 +1300,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1319,7 +1322,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1341,7 +1344,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1363,7 +1366,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">
@@ -1385,7 +1388,7 @@ const TopJobs = () => {
                                             <div className="card-block-info pt-25">
                                                 <h6><a href="job-details.html">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="jobs-grid.html">Lunacy</a>
+                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
                                                 <div className="card-2-bottom mt-20">
                                                     <div className="row">

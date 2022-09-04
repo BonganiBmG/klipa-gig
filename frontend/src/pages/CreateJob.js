@@ -13,6 +13,7 @@ const CreateJob = () => {
     const [description, setDescription] = useState('')
     const [budget, setBudget] = useState('')
     const [category, setCategory] = useState('')
+    const [deadline, setDeadline] = useState('')
     const nav = useNavigate();
     const [uploading, setUploading] = useState(false)
 
@@ -28,10 +29,17 @@ const CreateJob = () => {
         success: successUpdate,
     } = jobUpdate
 
+    const userLogin = useSelector((state) => state.userLogin)
+    const { userInfo } = userLogin
+
     useEffect(() => {
+         if (!userInfo || !userInfo.isAdmin) {
+            nav('/signin')
+        }
+
         if (successUpdate) {
             dispatch({ type: JOB_UPDATE_RESET })
-            //nav("/jobs-grid")
+            nav("/jobs-grid")
             //history.push('/admin/productlist')
         } else {
             if (!job.title || job._id !== jobId.id) {
@@ -75,7 +83,8 @@ const CreateJob = () => {
                 title,
                 description,
                 category,
-                budget
+                budget, 
+                deadline
             })
         )
     }
@@ -90,7 +99,7 @@ const CreateJob = () => {
                                 <div className="text-center">
                                     <p className="font-sm text-brand-2">Create A Job </p>
                                     <h2 className="mt-10 mb-5 text-brand-1">Start something new for your business</h2>
-                                    <p className="font-sm text-muted mb-30">Access to all experts</p>
+                                    <p className="font-sm text-muted mb-30">Receive your first offer from a candidate within 30 minutes</p>
                                 </div>
                                 <form onSubmit={submitHandler} className="login-register text-start mt-20" action="#">
                                     <div className="form-group">
@@ -125,6 +134,13 @@ const CreateJob = () => {
                                             value={budget}
                                             onChange={(e) => setBudget(e.target.value)}
                                             placeholder="R 100" />
+                                    </div>
+                                    <div className="form-group">
+                                        <label className="form-label" htmlFor="input-4">Deadline</label>
+                                        <input className="form-control" id="input-4" type="date" required="" name="deadline"
+                                            value={deadline}
+                                            onChange={(e) => setDeadline(e.target.value)}
+                                            placeholder="DD/MM/YYYY" />
                                     </div>
                                     <div className="form-group">
                                         <button className="btn btn-brand-1 hover-up w-100" type="submit" name="login">Submit &amp; Create</button>

@@ -15,8 +15,8 @@ const Contact = () => {
               </div>
               <div className="col-lg-6 text-lg-end">
                 <ul className="breadcrumbs mt-40">
-                  <li><a className="home-icon" href="#">Home</a></li>
-                  <li>Blog</li>
+                  <li><a className="home-icon" href="/">Home</a></li>
+                  <li>Contact</li>
                 </ul>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-lg-8 mb-40"><span className="font-md color-brand-2 mt-20 d-inline-block">Contact us</span>
               <h2 className="mt-5 mb-10">Get in touch</h2>
-              <p className="font-md color-text-paragraph-2">The right move at the right time saves your investment. live<br className="d-none d-lg-block"/> the dream of expanding your business.</p>
+              <p className="font-md color-text-paragraph-2">We want to hear from you</p>
               <form className="contact-form-style mt-30" id="contact-form" action="#" method="post">
                 <div className="row wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>
                   <div className="col-lg-6 col-md-6">
@@ -103,7 +103,7 @@ const Contact = () => {
             <div className="text-center">
               <h6 className="f-18 color-text-mutted text-uppercase">Our company</h6>
               <h2 className="section-title mb-10 wow animate__ animate__fadeInUp animated" style={{visibility: 'visible', animationName: `fadeInUp`}}>Meet Our Team</h2>
-              <p className="font-sm color-text-paragraph w-lg-50 mx-auto wow animate__ animate__fadeInUp animated" style={{visibility: 'visible', animationName: `fadeInUp`}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula ante, dictum non aliquet eu, dapibus ac quam. Morbi vel ante viverra orci tincidunt tempor eu id ipsum. Sed consectetur, risus a blandit tempor, velit magna pellentesque risus, at congue tellus dui quis nisl.</p>
+              <p className="font-sm color-text-paragraph w-lg-50 mx-auto wow animate__ animate__fadeInUp animated" style={{visibility: 'visible', animationName: `fadeInUp`}}>Get to know us</p>
             </div>
             <div className="row mt-70">
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-md-30">

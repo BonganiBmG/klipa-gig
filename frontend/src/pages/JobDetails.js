@@ -7,6 +7,7 @@ import {
 import { JOB_CREATE_REVIEW_RESET } from '../constants/jobConstants'
 import { useNavigate, useParams } from 'react-router-dom';
 import ReactTimeAgo from 'react-time-ago'
+import JobApply from '../components/JobApply';
 
 const JobDetails = () => {
     const jobId = useParams();
@@ -55,6 +56,7 @@ const JobDetails = () => {
 
     return (
         <div>
+            <JobApply/>
             <main className="main">
                 {loading && job ? (
                     <p>Loading...</p>
@@ -97,7 +99,7 @@ const JobDetails = () => {
                                                 </div>
                                                 <div className="col-md-6 d-flex">
                                                     <div className="sidebar-icon-item"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/job-single/deadline.svg" alt="jobBox" /></div>
-                                                    <div className="sidebar-text-info ml-10"><span className="text-description mb-10">Deadline</span><strong className="small-heading">10/08/2022</strong></div>
+                                                    <div className="sidebar-text-info ml-10"><span className="text-description mb-10">Deadline</span><strong className="small-heading">{job.deadline}</strong></div>
                                                 </div>
                                             </div>
                                             <div className="row mt-25">
@@ -117,7 +119,7 @@ const JobDetails = () => {
                                         </div>
                                         <div className="single-apply-jobs">
                                             <div className="row align-items-center">
-                                                <div className="col-md-5"><a className="btn btn-default mr-15" href="#">Apply now</a><a className="btn btn-border" href="#">Save job</a></div>
+                                                <div className="col-md-5"><a className="btn btn-default mr-15" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</a><a className="btn btn-border" href="#">Save job</a></div>
                                                 <div className="col-md-7 text-lg-end social-share">
                                                     <h6 className="color-text-paragraph-2 d-inline-block d-baseline mr-10">Share this</h6><a className="mr-5 d-inline-block d-middle" href="#"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/share-fb.svg" /></a><a className="mr-5 d-inline-block d-middle" href="#"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/share-tw.svg" /></a><a className="mr-5 d-inline-block d-middle" href="#"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/share-red.svg" /></a><a className="d-inline-block d-middle" href="#"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/share-whatsapp.svg" /></a>
                                                 </div>
@@ -129,7 +131,7 @@ const JobDetails = () => {
                                             <div className="sidebar-heading">
                                                 <div className="avatar-sidebar">
                                                     <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/job-single/avatar.png" /></figure>
-                                                    <div className="sidebar-info"><span className="sidebar-company">AliThemes</span><span className="card-location">Johannesburg, SA</span><a className="link-underline mt-15" href="#">02 Open Jobs</a></div>
+                                                    <div className="sidebar-info"><span className="sidebar-company">ABC Company</span><span className="card-location">Johannesburg, SA</span><a className="link-underline mt-15" href="/jobs-grid">02 Open Jobs</a></div>
                                                 </div>
                                             </div>
                                             <div className="sidebar-list-job">
@@ -150,8 +152,8 @@ const JobDetails = () => {
                         <section className="section-box mt-50 mb-50">
                             <div className="container">
                                 <div className="text-left">
-                                    <h2 className="section-title mb-10 wow animate__animated animate__fadeInUp" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Resources</h2>
-                                    <p className="font-lg color-text-paragraph-2 wow animate__animated animate__fadeInUp" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Use these free resources to complete the offer</p>
+                                    <h2 className="section-title mb-10 wow animate__animated animate__fadeInUp" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Projects To Get You Started</h2>
+                                    <p className="font-lg color-text-paragraph-2 wow animate__animated animate__fadeInUp" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Use these free resources to complete the job posted above</p>
                                 </div>
                                 <div className="mt-50">
                                     <div className="box-swiper style-nav-top">

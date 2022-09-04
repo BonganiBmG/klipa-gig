@@ -9,7 +9,7 @@ const Candidates = () => {
           <div className="banner-hero banner-company">
             <div className="block-banner text-center">
               <h3 className="wow animate__ animate__fadeInUp animated" style={{visibility: `visible`, animationName: `fadeInUp`}}>Browse Candidates</h3>
-              <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, <br className="d-none d-xl-block"/>atque delectus molestias quis?</div>
+              <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>Bringing South Africa's best tech enthusiasts into one view</div>
               <div className="box-list-character">
                 <ul>
                   <li><a className="active" href="#">A</a></li>
@@ -49,7 +49,7 @@ const Candidates = () => {
           <div className="content-page">
             <div className="box-filters-job">
               <div className="row">
-                <div className="col-xl-6 col-lg-5"><span className="text-small text-showing">Showing <strong>41-60 </strong>of <strong>944 </strong>jobs</span></div>
+                <div className="col-xl-6 col-lg-5"><span className="text-small text-showing">Showing candidates</span></div>
                 <div className="col-xl-6 col-lg-7 text-lg-end mt-sm-15">
                   <div className="display-flex2">
                     <div className="box-border mr-10"><span className="text-sortby">Show:</span>
@@ -81,165 +81,15 @@ const Candidates = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="card-grid-2 hover-up">
                   <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user1.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Robert Fox</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user2.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Cody Fisher</h5></a><span className="font-xs color-text-mutted">Python developer</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user3.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Jerome Bell</h5></a><span className="font-xs color-text-mutted">Content Manager</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user4.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Jane Cooper</h5></a><span className="font-xs color-text-mutted">Network</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user5.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Floyd Miles</h5></a><span className="font-xs color-text-mutted">Photo Editing</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user6.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Devon Lane</h5></a><span className="font-xs color-text-mutted">Online Marketing</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
+                    <div className="card-grid-2-image-rd online"><a>
                         <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user7.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Jerome Bell</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
+                    <div className="card-profile pt-10"><a>
+                        <h5>Jerome</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
                       <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
                     </div>
                   </div>
                   <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
+                    <p className="font-xs color-text-paragraph-2">Short description</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                       <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
                       </div>
@@ -247,7 +97,7 @@ const Candidates = () => {
                     <div className="employers-info align-items-center justify-content-center mt-15">
                       <div className="row">
                         <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
+                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1"></span></span></div>
                       </div>
                     </div>
                   </div>
@@ -256,115 +106,15 @@ const Candidates = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="card-grid-2 hover-up">
                   <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user8.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Eleanor</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user9.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Theresa</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user10.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Robert Fox</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user11.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Cameron</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
+                    <div className="card-grid-2-image-rd online"><a>
                         <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user12.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Jacob Jones</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
+                    <div className="card-profile pt-10"><a>
+                        <h5>Jane</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
                       <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
                     </div>
                   </div>
                   <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
+                    <p className="font-xs color-text-paragraph-2">Short description</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                       <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
                       </div>
@@ -372,7 +122,7 @@ const Candidates = () => {
                     <div className="employers-info align-items-center justify-content-center mt-15">
                       <div className="row">
                         <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
+                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1"></span></span></div>
                       </div>
                     </div>
                   </div>
@@ -381,40 +131,15 @@ const Candidates = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="card-grid-2 hover-up">
                   <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user13.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Court Henry</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
+                    <div className="card-grid-2-image-rd online"><a>
                         <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user14.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
+                    <div className="card-profile pt-10"><a>
                         <h5>Hawkins</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
                       <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
                     </div>
                   </div>
                   <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
+                    <p className="font-xs color-text-paragraph-2">Short description</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                       <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
                       </div>
@@ -422,7 +147,7 @@ const Candidates = () => {
                     <div className="employers-info align-items-center justify-content-center mt-15">
                       <div className="row">
                         <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
+                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1"></span></span></div>
                       </div>
                     </div>
                   </div>
@@ -431,48 +156,23 @@ const Candidates = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="card-grid-2 hover-up">
                   <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user15.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5>Howard</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
+                    <div className="card-grid-2-image-rd online"><a>
+                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user9.png"/></figure></a></div>
+                    <div className="card-profile pt-10"><a>
+                        <h5>Terrence</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
                       <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
                     </div>
                   </div>
                   <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
+                    <p className="font-xs color-text-paragraph-2">Short description</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                       <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
                       </div>
                     </div>
                     <div className="employers-info align-items-center justify-content-center mt-15">
                       <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
-                <div className="card-grid-2 hover-up">
-                  <div className="card-grid-2-image-left">
-                    <div className="card-grid-2-image-rd online"><a href="candidate-details.html">
-                        <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user1.png"/></figure></a></div>
-                    <div className="card-profile pt-10"><a href="candidate-details.html">
-                        <h5> Alexander</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
-                      <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
-                    </div>
-                  </div>
-                  <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
-                    <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
-                      </div>
-                    </div>
-                    <div className="employers-info align-items-center justify-content-center mt-15">
-                      <div className="row">
-                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Johannesburg, SA</span></span></div>
-                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1">R45 / hour</span></span></div>
+                        <div className="col-6"><span className="d-flex align-items-center"><i className="fi-rr-marker mr-5 ml-0"></i><span className="font-sm color-text-mutted">Chicago, US</span></span></div>
+                        <div className="col-6"><span className="d-flex justify-content-end align-items-center"><i className="fi-rr-clock mr-5"></i><span className="font-sm color-brand-1"></span></span></div>
                       </div>
                     </div>
                   </div>
@@ -483,12 +183,12 @@ const Candidates = () => {
           <div className="paginations">
             <ul className="pager">
               <li><a className="pager-prev" href="#"></a></li>
-              <li><a className="pager-number" href="#">1</a></li>
+              <li><a className="pager-number active" href="#">1</a></li>
               <li><a className="pager-number" href="#">2</a></li>
               <li><a className="pager-number" href="#">3</a></li>
               <li><a className="pager-number" href="#">4</a></li>
               <li><a className="pager-number" href="#">5</a></li>
-              <li><a className="pager-number active" href="#">6</a></li>
+              <li><a className="pager-number" href="#">6</a></li>
               <li><a className="pager-number" href="#">7</a></li>
               <li><a className="pager-next" href="#"></a></li>
             </ul>

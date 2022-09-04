@@ -53,7 +53,7 @@ const Government = () => {
               <div className="content-page">
                 <div className="box-filters-job">
                   <div className="row">
-                    <div className="col-xl-6 col-lg-5"><span className="text-small text-showing">Showing <strong>41-60 </strong>of <strong>944 </strong>jobs</span></div>
+                    <div className="col-xl-6 col-lg-5"><span className="text-small text-showing">Showing government opportunities</span></div>
                     <div className="col-xl-6 col-lg-7 text-lg-end mt-sm-15">
                       <div className="display-flex2">
                         <div className="box-border mr-10"><span className="text-sortby">Show:</span>
