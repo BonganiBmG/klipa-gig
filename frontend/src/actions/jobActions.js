@@ -53,7 +53,10 @@ export const listJobDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: JOB_DETAILS_REQUEST })
 
+    console.log(id)
+
     const { data } = await axios.get(`/api/jobs/${id}`)
+
 
     dispatch({
       type: JOB_DETAILS_SUCCESS,

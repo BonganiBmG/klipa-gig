@@ -30,9 +30,9 @@ const Header = () => {
                                     </li>
                                     <li><a href="/companies">Companies</a>
                                     </li>
-                                    <li><a href="/candidates">Candidates</a>
+                                    <li><a href="/government">Government</a>
                                     </li>
-                                    <li><a href="/blog">Blog</a>
+                                    <li><a href="/candidates">Candidates</a>
                                     </li>
                                     <li><a href="/contact">Contact</a></li>
                                 </ul>

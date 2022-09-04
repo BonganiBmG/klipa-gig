@@ -11,6 +11,7 @@ import JobsGrid from "./pages/JobsGrid";
 import CreateJob from "./pages/CreateJob";
 import SignIn from "./pages/SignIn";
 import SignUp from './pages/SignUp';
+import Government from "./pages/Government";
 
 
 function App() {
@@ -23,9 +24,10 @@ function App() {
             <Route path="signup" element={<SignUp />} />
             <Route path="signin" element={<SignIn />} />
             <Route path="jobs-grid" element={<JobsGrid />} />
-            <Route path="job-details" element={<JobDetails />} />
+            <Route path="/job/:id/detail" element={<JobDetails />} />
             <Route path="candidates" element={<Candidates />} />
             <Route path="companies" element={<Companies />} />
+            <Route path="government" element={<Government />} />
             <Route path="contact" element={<Contact />} />
             <Route path="/job/:id/edit" element={<CreateJob />} />
             <Route path="blog" element={<Blog />} />

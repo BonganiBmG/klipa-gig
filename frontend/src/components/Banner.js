@@ -14,7 +14,6 @@ const Banner = () => {
                   <button className="btn btn-default btn-find font-sm">Search</button>
                 </form>
               </div>
-              <div className="list-tags-banner mt-20 wow animate__ animate__fadeInUp animated" data-wow-delay=".3s" style={{visibility: `visible`, animationDelay: `0.3s`, animationName: `fadeInUp`}}><strong>Popular Searches:</strong><a href="#">Designer</a>, <a href="#">Web</a>, <a href="#">IOS</a>, <a href="#">Developer</a>, <a href="#">PHP</a>, <a href="#">Senior</a>, <a href="#">Engineer</a></div>
             </div>
             <div className="mt-60">
               <div className="row">
