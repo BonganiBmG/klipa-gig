@@ -31,6 +31,10 @@ const jobSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    category: {
+      type: String,
+      required: true,
+    },
     budget: {
       type: Number,
       required: true,

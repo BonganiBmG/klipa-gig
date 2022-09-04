@@ -6,12 +6,13 @@ import { listJobDetails, updateJob } from '../actions/jobActions'
 import { JOB_UPDATE_RESET } from '../constants/jobConstants'
 
 const CreateJob = () => {
-    const jobId = useParams(); 
+    const jobId = useParams();
     //console.log(jobId.id)
 
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     const [budget, setBudget] = useState('')
+    const [category, setCategory] = useState('')
     const nav = useNavigate();
     const [uploading, setUploading] = useState(false)
 
@@ -38,6 +39,7 @@ const CreateJob = () => {
             } else {
                 setTitle(job.title)
                 setDescription(job.description)
+                setCategory(job.category)
                 setBudget(job.Budget)
             }
         }
@@ -72,6 +74,7 @@ const CreateJob = () => {
                 _id: jobId.id,
                 title,
                 description,
+                category,
                 budget
             })
         )
@@ -80,7 +83,7 @@ const CreateJob = () => {
     return (
         <div>
             <main className="main">
-                <section className="pt-100 login-register">
+                <section className="login-register">
                     <div className="container">
                         <div className="row login-register-cover">
                             <div className="col-lg-8 col-md-6 col-sm-12 mx-auto">
@@ -103,6 +106,18 @@ const CreateJob = () => {
                                             value={description}
                                             onChange={(e) => setDescription(e.target.value)}
                                             placeholder="Mobile app description" />
+                                    </div>
+                                    <div className="form-group">
+                                        <label className="form-label" htmlFor="input-2">Category</label>
+                                        {/* <input className="form-control" id="input-2" type="text" required="" name="category"
+                                            value={category}
+                                            onChange={(e) => setCategory(e.target.value)}
+                                            placeholder="Graphic Design" /> */}
+                                        <select className="form-control" value={category} onChange={(e) => setCategory(e.target.value)}>
+                                            <option value="Graphic Design">Graphic Design</option>
+                                            <option value="Website Development">Website Development</option>
+                                            <option value="Online Marketing">Online Marketing</option>
+                                        </select>
                                     </div>
                                     <div className="form-group">
                                         <label className="form-label" htmlFor="input-4">Budget</label>

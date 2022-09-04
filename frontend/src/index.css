@@ -28,7 +28,7 @@ TABLE CONTENT
 ***/
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 /*import vendors*/
-@import url(http://wp.alithemes.com/html/jobbox/demos/assets/css/http://wp.alithemes.com/html/jobbox/demos/assets/css/vendors/normalize.css);
+@import url(http://wp.alithemes.com/html/jobbox/demos/assets/css/vendors/normalize.css);
 @import url(http://wp.alithemes.com/html/jobbox/demos/assets/css/vendors/bootstrap.min.css);
 @import url(http://wp.alithemes.com/html/jobbox/demos/assets/css/vendors/uicons-regular-rounded.css);
 /*import plugins*/

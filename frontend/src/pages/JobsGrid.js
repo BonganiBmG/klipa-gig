@@ -116,7 +116,7 @@ const JobsGrid = () => {
                                     </div>
                                     <div className="row">
                                         {jobs?.map((job) => (
-                                            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div key={job._id} className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                                 <div className="card-grid-2 hover-up">
                                                     <div className="card-grid-2-image-left"><span className="flash"></span>
                                                         <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
@@ -124,7 +124,7 @@ const JobsGrid = () => {
                                                     </div>
                                                     <div className="card-block-info">
                                                         <h6><Link to={`/job/${job._id}/detail`}>{job.title}</Link></h6>
-                                                        <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+                                                        <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time"></span></div>
                                                         <p className="font-sm color-text-paragraph mt-15">{job.description}</p>
                                                         <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
                                                         </div>

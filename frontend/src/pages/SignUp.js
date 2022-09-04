@@ -51,14 +51,14 @@ const SignUp = () => {
                                         <input className="form-control" id="input-1" type="text" required="" name="fullname"
                                             value={name}
                                             onChange={(e) => setName(e.target.value)}
-                                            placeholder="Steven Job" />
+                                            placeholder="Lethabo Mokoena" />
                                     </div>
                                     <div className="form-group">
                                         <label className="form-label" htmlFor="input-2">Email *</label>
                                         <input className="form-control" id="input-2" type="email" required="" name="emailaddress"
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
-                                            placeholder="stevenjob@gmail.com" />
+                                            placeholder="lethabomokoena@gmail.com" />
                                     </div>
                                     <div className="form-group">
                                         <label className="form-label" htmlFor="input-4">Password *</label>

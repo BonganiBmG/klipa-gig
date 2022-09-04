@@ -41,7 +41,9 @@ const Header = () => {
                         </div>
                         <div className="header-right">
                             {userInfo ? (
-                                <div className="block-signin"><button className="btn btn-default btn-shadow ml-40 hover-up" onClick={logoutHandler}>Sign Out</button></div>
+                                <div className="block-signin">
+                                    <a className="text-link-bd-btom hover-up" href="/profile">Profile</a>
+                                    <button className="btn btn-default btn-shadow ml-40 hover-up" onClick={logoutHandler}>Sign Out</button></div>
                             ) : (
                                 <div className="block-signin"><a className="text-link-bd-btom hover-up" href="/signup">Register</a><a className="btn btn-default btn-shadow ml-40 hover-up" href="/signin">Sign in</a></div>
                             )}
