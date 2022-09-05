@@ -149,7 +149,7 @@ const Profile = () => {
                                                             </div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h4><a href="job-details.html">React Native Web Developer</a></h4>
+                                                            <h4><a href="#">React Native Web Developer</a></h4>
                                                             <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time"><span>4</span><span> mins ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
                                                             <div className="card-2-bottom mt-20">
@@ -177,7 +177,7 @@ const Profile = () => {
                                                             </div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h4><a href="job-details.html">Senior System Engineer</a></h4>
+                                                            <h4><a href="#">Senior System Engineer</a></h4>
                                                             <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time"><span>5</span><span> mins ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
                                                             <div className="card-2-bottom mt-20">
@@ -205,7 +205,7 @@ const Profile = () => {
                                                             </div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h4><a href="job-details.html">Products Manager</a></h4>
+                                                            <h4><a href="#">Products Manager</a></h4>
                                                             <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time"><span>6</span><span> mins ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
                                                             <div className="card-2-bottom mt-20">
@@ -233,7 +233,7 @@ const Profile = () => {
                                                             </div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h4><a href="job-details.html">Lead Quality Control QA</a></h4>
+                                                            <h4><a href="#">Lead Quality Control QA</a></h4>
                                                             <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time"><span>6</span><span> mins ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
                                                             <div className="card-2-bottom mt-20">
@@ -269,13 +269,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                                                            <h6><a href="#">UI / UX Designer fulltime</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small mr-5" href="#">Figma</a><a className="btn btn-grey-small mr-5" href="#">Photoshop</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">
@@ -292,13 +292,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">Adobe Ilustrator</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">Adobe Ilustrator</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                            <h6><a href="#">Full Stack Engineer</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">React</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">NodeJS</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">React</a><a className="btn btn-grey-small mr-5" href="#">NodeJS</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">
@@ -315,13 +315,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">Bing Search</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">Bing Search</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">Java Software Engineer</a></h6>
+                                                            <h6><a href="#">Java Software Engineer</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Python</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">AWS</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Python</a><a className="btn btn-grey-small mr-5" href="#">AWS</a><a className="btn btn-grey-small mr-5" href="#">Photoshop</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">
@@ -338,13 +338,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">Frontend Developer</a></h6>
+                                                            <h6><a href="#">Frontend Developer</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Typescript</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Java</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Typescript</a><a className="btn btn-grey-small mr-5" href="#">Java</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">
@@ -361,13 +361,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">Linkedin</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">Linkedin</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                            <h6><a href="#">React Native Web Developer</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Fulltime</span><span className="card-time">4<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Angular</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Angular</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">
@@ -384,13 +384,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                            <h6><a href="#">Senior System Engineer</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="job-details.html">PHP</a><a className="btn btn-grey-small mr-5" href="job-details.html">Android</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">PHP</a><a className="btn btn-grey-small mr-5" href="#">Android</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">
@@ -407,13 +407,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">Nintendo</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">Nintendo</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">Products Manager</a></h6>
+                                                            <h6><a href="#">Products Manager</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="job-details.html">ASP .Net</a><a className="btn btn-grey-small mr-5" href="job-details.html">Figma</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">ASP .Net</a><a className="btn btn-grey-small mr-5" href="#">Figma</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">
@@ -430,13 +430,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                                                            <h6><a href="#">Lead Quality Control QA</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="job-details.html">iOS</a><a className="btn btn-grey-small mr-5" href="job-details.html">Laravel</a><a className="btn btn-grey-small mr-5" href="job-details.html">Golang</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">Golang</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">
@@ -453,13 +453,13 @@ const Profile = () => {
                                                     <div className="card-grid-2 hover-up">
                                                         <div className="card-grid-2-image-left"><span className="flash"></span>
                                                             <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="company-details.html">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
+                                                            <div className="right-info"><a className="name-job" href="#">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
                                                         </div>
                                                         <div className="card-block-info">
-                                                            <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                                                            <h6><a href="#">Lead Quality Control QA</a></h6>
                                                             <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
                                                             <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="job-details.html">iOS</a><a className="btn btn-grey-small mr-5" href="job-details.html">Laravel</a><a className="btn btn-grey-small mr-5" href="job-details.html">Golang</a>
+                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">Golang</a>
                                                             </div>
                                                             <div className="card-2-bottom mt-30">
                                                                 <div className="row">

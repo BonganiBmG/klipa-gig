@@ -77,7 +77,7 @@ const SignUp = () => {
                                     <div className="login_footer form-group d-flex justify-content-between">
                                         <label className="cb-container">
                                             <input type="checkbox" /><span className="text-small">Agree our terms and policy</span><span className="checkmark"></span>
-                                        </label><a className="text-muted" href="page-contact.html">Learn more</a>
+                                        </label><a className="text-muted" href="/contact">Learn more</a>
                                     </div>
                                     <div className="form-group">
                                         <button className="btn btn-brand-1 hover-up w-100" type="submit" name="login">Submit &amp; Register</button>

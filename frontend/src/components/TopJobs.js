@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { listJobs } from '../actions/jobActions'
 import ReactTimeAgo from 'react-time-ago'
+import logo from '../images/kl.png'
 
 const TopJobs = () => {
     const keyword = ""
@@ -52,9 +53,9 @@ const TopJobs = () => {
                                                     <div className="card-2-bottom mt-20">
                                                         <div className="row">
                                                             <div className="col-lg-7 col-md-7">
-                                                                <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
+                                                                <div className="d-flex"><img className="img-rounded" src={logo} alt="jobBox" />
                                                                     <div className="info-right-img">
-                                                                        <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                                                        <h6 className="color-brand-1 lh-14">{job.deadline ? (<>Deadline: <ReactTimeAgo date={job.deadline} locale="en-US"/></>) : (<span>Deadline</span>)}</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -72,7 +73,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
@@ -94,7 +95,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
@@ -116,7 +117,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -138,7 +139,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -160,7 +161,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Java Software Engineer</a></h6>
+                                                <h6><a href="#">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -182,7 +183,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Frontend Developer</a></h6>
+                                                <h6><a href="#">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -204,7 +205,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -226,7 +227,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -248,7 +249,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                                                <h6><a href="#">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -270,7 +271,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -292,7 +293,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -314,7 +315,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -340,7 +341,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
@@ -362,7 +363,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
@@ -384,7 +385,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -406,7 +407,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -428,7 +429,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Java Software Engineer</a></h6>
+                                                <h6><a href="#">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -450,7 +451,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Frontend Developer</a></h6>
+                                                <h6><a href="#">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -472,7 +473,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -494,7 +495,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -516,7 +517,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                                                <h6><a href="#">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -538,7 +539,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -560,7 +561,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -582,7 +583,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -608,7 +609,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
@@ -630,7 +631,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
@@ -652,7 +653,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -674,7 +675,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -696,7 +697,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Java Software Engineer</a></h6>
+                                                <h6><a href="#">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -718,7 +719,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Frontend Developer</a></h6>
+                                                <h6><a href="#">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -740,7 +741,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -762,7 +763,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -784,7 +785,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                                                <h6><a href="#">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -806,7 +807,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -828,7 +829,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -850,7 +851,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -876,7 +877,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
@@ -898,7 +899,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
@@ -920,7 +921,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -942,7 +943,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -964,7 +965,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Java Software Engineer</a></h6>
+                                                <h6><a href="#">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -986,7 +987,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Frontend Developer</a></h6>
+                                                <h6><a href="#">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1008,7 +1009,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1030,7 +1031,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1052,7 +1053,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                                                <h6><a href="#">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1074,7 +1075,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1096,7 +1097,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1118,7 +1119,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1144,7 +1145,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher remote</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
                                                 </div>
@@ -1166,7 +1167,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
                                                 </div>
@@ -1188,7 +1189,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1210,7 +1211,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                                                <h6><a href="#">Full Stack Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1232,7 +1233,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Java Software Engineer</a></h6>
+                                                <h6><a href="#">Java Software Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1254,7 +1255,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Frontend Developer</a></h6>
+                                                <h6><a href="#">Frontend Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1276,7 +1277,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1298,7 +1299,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1320,7 +1321,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                                                <h6><a href="#">Lead Quality Control QA</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1342,7 +1343,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">UX Designer &amp; Researcher</a></h6>
+                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1364,7 +1365,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                                                <h6><a href="#">React Native Web Developer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>
@@ -1386,7 +1387,7 @@ const TopJobs = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="card-grid-2 grid-bd-16 hover-up">
                                             <div className="card-block-info pt-25">
-                                                <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                                                <h6><a href="#">Senior System Engineer</a></h6>
                                                 <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
                                                 <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
                                                 </div>

@@ -72,7 +72,7 @@ const Candidates = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="box-view-type"><a className="view-type" href="jobs-list.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-list.svg" alt="jobBox"/></a><a className="view-type" href="jobs-grid.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-grid-hover.svg" alt="jobBox"/></a></div>
+                    <div className="box-view-type"><a className="view-type" href="#"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-list.svg" alt="jobBox"/></a><a className="view-type" href="#"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-grid-hover.svg" alt="jobBox"/></a></div>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ const Candidates = () => {
                   <div className="card-block-info">
                     <p className="font-xs color-text-paragraph-2">Short description</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
+                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="#">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Digital</a>
                       </div>
                     </div>
                     <div className="employers-info align-items-center justify-content-center mt-15">
@@ -116,7 +116,7 @@ const Candidates = () => {
                   <div className="card-block-info">
                     <p className="font-xs color-text-paragraph-2">Short description</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
+                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="#">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Digital</a>
                       </div>
                     </div>
                     <div className="employers-info align-items-center justify-content-center mt-15">
@@ -141,7 +141,7 @@ const Candidates = () => {
                   <div className="card-block-info">
                     <p className="font-xs color-text-paragraph-2">Short description</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
+                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="#">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Digital</a>
                       </div>
                     </div>
                     <div className="employers-info align-items-center justify-content-center mt-15">
@@ -166,7 +166,7 @@ const Candidates = () => {
                   <div className="card-block-info">
                     <p className="font-xs color-text-paragraph-2">Short description</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
-                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="jobs-grid.html">Digital</a>
+                      <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="#">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Digital</a>
                       </div>
                     </div>
                     <div className="employers-info align-items-center justify-content-center mt-15">

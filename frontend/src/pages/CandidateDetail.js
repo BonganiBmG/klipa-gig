@@ -15,7 +15,7 @@ const CandidateDetail = () => {
                 <p className="mt-0 font-md color-text-paragraph-2 mb-15">UI/UX Designer. Front end Developer</p>
                 <div className="mt-10 mb-15"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobbox"/><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobbox"/><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobbox"/><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobbox"/><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobbox"/><span className="font-xs color-text-mutted ml-10">(66)</span><img className="ml-30" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/verified.png" alt="jobbox"/></div>
               </div>
-              <div className="col-lg-4 col-md-12 text-lg-end"><a className="btn btn-download-icon btn-apply btn-apply-big" href="page-contact.html">Download CV</a></div>
+              <div className="col-lg-4 col-md-12 text-lg-end"><a className="btn btn-download-icon btn-apply btn-apply-big" href="#">Download CV</a></div>
             </div>
           </div>
           <div className="box-nav-tabs mt-40 mb-5">
@@ -113,13 +113,13 @@ const CandidateDetail = () => {
                         </div>
                       </div>
                       <div className="card-block-info">
-                        <h4><a href="job-details.html">Senior System Engineer</a></h4>
+                        <h4><a href="#">Senior System Engineer</a></h4>
                         <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time"><span>5</span><span> days ago</span></span></div>
                         <p className="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
                         <div className="card-2-bottom mt-20">
                           <div className="row">
                             <div className="col-lg-7 col-7"><span className="card-text-price">Status:<span className="text-success">Done</span></span></div>
-                            <div className="col-lg-5 col-5 text-end"><a className="btn btn-apply-now" href="job-details.html">View Details</a></div>
+                            <div className="col-lg-5 col-5 text-end"><a className="btn btn-apply-now" href="#">View Details</a></div>
                           </div>
                         </div>
                       </div>
@@ -139,13 +139,13 @@ const CandidateDetail = () => {
                         </div>
                       </div>
                       <div className="card-block-info">
-                        <h4><a href="job-details.html">Products Manager</a></h4>
+                        <h4><a href="#">Products Manager</a></h4>
                         <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time"><span>6</span><span> days ago</span></span></div>
                         <p className="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
                         <div className="card-2-bottom mt-20">
                           <div className="row">
                             <div className="col-lg-7 col-7"><span className="card-text-price">Status:<span className="text-success">Done</span></span></div>
-                            <div className="col-lg-5 col-5 text-end"><a className="btn btn-apply-now" href="job-details.html">View Details</a></div>
+                            <div className="col-lg-5 col-5 text-end"><a className="btn btn-apply-now" href="#">View Details</a></div>
                           </div>
                         </div>
                       </div>
@@ -165,13 +165,13 @@ const CandidateDetail = () => {
                         </div>
                       </div>
                       <div className="card-block-info">
-                        <h4><a href="job-details.html">Lead Quality Control QA</a></h4>
+                        <h4><a href="#">Lead Quality Control QA</a></h4>
                         <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time"><span>6</span><span> days ago</span></span></div>
                         <p className="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
                         <div className="card-2-bottom mt-20">
                           <div className="row">
                             <div className="col-lg-7 col-7"><span className="card-text-price">Status:<span className="text-success">Done</span></span></div>
-                            <div className="col-lg-5 col-5 text-end"><a className="btn btn-apply-now" href="job-details.html">View Details</a></div>
+                            <div className="col-lg-5 col-5 text-end"><a className="btn btn-apply-now" href="#">View Details</a></div>
                           </div>
                         </div>
                       </div>
@@ -222,7 +222,7 @@ const CandidateDetail = () => {
                     <li>Phone: (123) 456-7890</li>
                     <li>Email: contact@lethabodev.com</li>
                   </ul>
-                  <div className="mt-30"><a className="btn btn-send-message" href="page-contact.html">Send Message</a></div>
+                  <div className="mt-30"><a className="btn btn-send-message" href="#">Send Message</a></div>
                 </div>
               </div>
             </div>

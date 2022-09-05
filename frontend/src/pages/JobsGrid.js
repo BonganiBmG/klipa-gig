@@ -10,6 +10,7 @@ import {
 import { JOB_CREATE_RESET } from '../constants/jobConstants'
 import ReactTimeAgo from 'react-time-ago'
 import JobApply from '../components/JobApply';
+import logo from '../images/kl.png'
 
 const JobsGrid = () => {
     //const pageNumber = match.params.pageNumber || 1
@@ -114,7 +115,7 @@ const JobsGrid = () => {
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div className="box-view-type"><a className="view-type" href="jobs-list.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-list.svg" alt="jobBox" /></a><a className="view-type" href="jobs-grid.html"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-grid-hover.svg" alt="jobBox" /></a></div>
+                                                    <div className="box-view-type"><a className="view-type" href="#"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-list.svg" alt="jobBox" /></a><a className="view-type" href="#"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-grid-hover.svg" alt="jobBox" /></a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -128,7 +129,7 @@ const JobsGrid = () => {
                                                         <h6 className="mt-30"><Link to={`/job/${job._id}/detail`}>{job.title}</Link></h6>
                                                        
                                                         <p className="font-sm color-text-paragraph mt-15">{job.description}</p>
-                                                        <div className="mt-30"><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a className="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                                                        <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small mr-5" href="#">Figma</a><a className="btn btn-grey-small mr-5" href="#">Photoshop</a>
                                                         </div>
                                                         <div className="card-2-bottom mt-30">
                                                             <div className="row">
@@ -140,8 +141,8 @@ const JobsGrid = () => {
                                                         </div>
                                                     </div>
                                                     <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                        <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" /></div>
-                                                        <div className="right-info"><a className="name-job" href="company-details.html">LinkedIn</a><span className="location-small">Johannesburg, SA</span></div>
+                                                        <div className="image-box"><img src={logo} width="50" alt="jobBox" /></div>
+                                                        <div className="right-info"><a className="name-job" href="#">{job.deadline ? (<>Deadline: <ReactTimeAgo date={job.deadline} locale="en-US"/></>) : (<span>Deadline</span>)}</a><span className="location-small">Johannesburg, SA</span></div>
                                                     </div>
                                                 </div>
                                             </div>
