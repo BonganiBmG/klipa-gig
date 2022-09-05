@@ -1,23 +1,28 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
-
+  const nav = useNavigate();
   const dispatch = useDispatch()
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
+  const submitHandler = () => {
+    nav('/jobs-grid')
+  }
+
   return (
     <div>
-        <section className="section-box">
+      <section className="section-box">
         <div className="banner-hero hero-2">
           <div className="banner-inner">
             <div className="block-banner">
-              <h1 className="text-42 color-white wow animate__ animate__fadeInUp animated" style={{visibility: `visible`, animationame: `fadeInUp`}}>Hello <span className="color-green">{userInfo?.name}</span><br className="d-none d-lg-block"/>Find your next job, earn cash</h1>
-              <div className="form-find mt-40 wow animate__ animate__fadeIn animated" data-wow-delay=".2s" style={{visibility: `visible`, animationDelay: `0.2s`, animationName: `fadeIn`}}>
-                <form>
-                  <input className="form-input input-keysearch mr-10" type="text" placeholder="I need a website"/>
+              <h1 className="text-42 color-white wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationame: `fadeInUp` }}>Hello <span className="color-green">{userInfo?.name}</span><br className="d-none d-lg-block" />Find your next job, earn cash</h1>
+              <div className="form-find mt-40 wow animate__ animate__fadeIn animated" data-wow-delay=".2s" style={{ visibility: `visible`, animationDelay: `0.2s`, animationName: `fadeIn` }}>
+                <form onSubmit={submitHandler}>
+                  <input className="form-input input-keysearch mr-10" type="text" placeholder="I need a website" />
                   <button className="btn btn-default btn-find font-sm">Search</button>
                 </form>
               </div>

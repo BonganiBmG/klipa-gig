@@ -27,9 +27,9 @@ const TopJobs = () => {
                         <div className="list-tabs mt-40">
                             <ul className="nav nav-tabs" role="tablist">
                                 <li><a className="active" id="nav-tab-job-1" href="#tab-job-1" data-bs-toggle="tab" role="tab" aria-controls="tab-job-1" aria-selected="true"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/management.svg" alt="jobBox" /> Web Development</a></li>
-                                <li><a id="nav-tab-job-2" href="#tab-job-2" data-bs-toggle="tab" role="tab" aria-controls="tab-job-2" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/marketing.svg" alt="jobBox" /> Marketing &amp; Sale</a></li>
+                                <li><a id="nav-tab-job-2" href="#tab-job-2" data-bs-toggle="tab" role="tab" aria-controls="tab-job-2" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/marketing.svg" alt="jobBox" /> Marketing &amp; Sales</a></li>
                                 <li><a id="nav-tab-job-3" href="#tab-job-3" data-bs-toggle="tab" role="tab" aria-controls="tab-job-3" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/finance.svg" alt="jobBox" />Graphic Design</a></li>
-                                <li><a id="nav-tab-job-4" href="#tab-job-4" data-bs-toggle="tab" role="tab" aria-controls="tab-job-4" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/human.svg" alt="jobBox" />Product Testing</a></li>
+                                <li><a id="nav-tab-job-4" href="#tab-job-4" data-bs-toggle="tab" role="tab" aria-controls="tab-job-4" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/human.svg" alt="jobBox" />Social Influencer Collaborations</a></li>
                                 <li><a id="nav-tab-job-5" href="#tab-job-5" data-bs-toggle="tab" role="tab" aria-controls="tab-job-5" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/retail.svg" alt="jobBox" />Promotions</a></li>
                                 <li><a id="nav-tab-job-6" href="#tab-job-6" data-bs-toggle="tab" role="tab" aria-controls="tab-job-6" aria-selected="false"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage1/content.svg" alt="jobBox" /> Content Writer</a></li>
                             </ul>
@@ -45,7 +45,7 @@ const TopJobs = () => {
                                                 <div className="card-block-info pt-25">
                                                     <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
                                                    
-                                                    <div className="mb-20"><span className="card-briefcase mr-15">Remote</span><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+                                                    <div className="mb-20"><span className="card-briefcase mr-15">{job.category}</span><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
 
                                                     <span className="mt-40">{job.description}</span>
                                                     <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>

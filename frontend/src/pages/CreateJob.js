@@ -123,9 +123,13 @@ const CreateJob = () => {
                                             onChange={(e) => setCategory(e.target.value)}
                                             placeholder="Graphic Design" /> */}
                                         <select className="form-control" value={category} onChange={(e) => setCategory(e.target.value)}>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Marketing and Sales">Marketing and Sales</option>
                                             <option value="Graphic Design">Graphic Design</option>
-                                            <option value="Website Development">Website Development</option>
-                                            <option value="Online Marketing">Online Marketing</option>
+                                            <option value="Social Influencer Collaborations">Social Influencer Collaborations</option>
+                                            <option value="Promotions">Promotions</option>
+                                            <option value="Content Writer">Content Writer</option>
+                                            
                                         </select>
                                     </div>
                                     <div className="form-group">
