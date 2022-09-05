@@ -56,7 +56,7 @@ const JobDetails = () => {
 
     return (
         <div>
-            <JobApply/>
+            <JobApply />
             <main className="main">
                 {loading && job ? (
                     <p>Loading...</p>
@@ -105,7 +105,7 @@ const JobDetails = () => {
                                             <div className="row mt-25">
                                                 <div className="col-md-6 d-flex mt-sm-15">
                                                     <div className="sidebar-icon-item"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/job-single/updated.svg" alt="jobBox" /></div>
-                                                    <div className="sidebar-text-info ml-10"><span className="text-description jobtype-icon mb-10">Updated</span><strong className="small-heading">{ job.updatedAt ? (<ReactTimeAgo date={job.updatedAt} locale="en-US"/>) : (<p>Loading</p>)}</strong></div>
+                                                    <div className="sidebar-text-info ml-10"><span className="text-description jobtype-icon mb-10">Updated</span><strong className="small-heading">{job.updatedAt ? (<ReactTimeAgo date={job.updatedAt} locale="en-US" />) : (<p>Loading</p>)}</strong></div>
                                                 </div>
                                                 <div className="col-md-6 d-flex mt-sm-15">
                                                     <div className="sidebar-icon-item"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/job-single/location.svg" alt="jobBox" /></div>
@@ -130,8 +130,8 @@ const JobDetails = () => {
                                         <div className="sidebar-border">
                                             <div className="sidebar-heading">
                                                 <div className="avatar-sidebar">
-                                                    <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/job-single/avatar.png" /></figure>
-                                                    <div className="sidebar-info"><span className="sidebar-company">ABC Company</span><span className="card-location">Johannesburg, SA</span><a className="link-underline mt-15" href="/jobs-grid">02 Open Jobs</a></div>
+                                                    <figure><img alt="jobBox" src="https://images.unsplash.com/photo-1519763421920-f2d769e01a37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=429&q=80" /></figure>
+                                                    <div className="sidebar-info"><span className="sidebar-company">Lethabo Mokoena</span><span className="card-location">Johannesburg, SA</span><a className="link-underline mt-15" href="/jobs-grid">02 Open Jobs</a></div>
                                                 </div>
                                             </div>
                                             <div className="sidebar-list-job">
@@ -141,7 +141,7 @@ const JobDetails = () => {
                                                 <ul className="ul-disc">
                                                     <li>41 Juta Street, Braamfontein, Johannesburg, 2001</li>
                                                     <li>Phone: (123) 456-7890</li>
-                                                    <li>Email: contact@alithemes</li>
+                                                    <li>Email: contact@mokoenabiz.com</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -155,287 +155,98 @@ const JobDetails = () => {
                                     <h2 className="section-title mb-10 wow animate__animated animate__fadeInUp" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Projects To Get You Started</h2>
                                     <p className="font-lg color-text-paragraph-2 wow animate__animated animate__fadeInUp" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Use these free resources to complete the job posted above</p>
                                 </div>
-                                <div className="mt-50">
-                                    <div className="box-swiper style-nav-top">
-                                        <div className="swiper-container swiper-group-4 swiper swiper-initialized swiper-horizontal swiper-pointer-events">
-                                            <div className="swiper-wrapper pb-10 pt-5" id="swiper-wrapper-ba5abfe4b812dabc" aria-live="off" style={{ transform: `translate3d(-2034px, 0px, 0px)`, transitionDuration: `0ms` }}>
-                                                <div className="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="1 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Senior System Engineer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">PHP</a><a className="btn btn-grey-small mr-5" href="#">Android    </a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                <div className="row mt-30">
+                                    <div className="col-3">
+                                        <div className="card-grid-2 hover-up">
+                                            <div className="card-grid-2-image-left"><span className="flash"></span>
+                                                <div className="image-box"><img src="https://upload.wikimedia.org/wikipedia/en/8/86/Standard_Bank_of_South_Africa_logo.png" width="50" alt="jobBox" /></div>
+                                                <div className="right-info"><a className="name-job" href="https://developer.standardbank.com/APIMarketplace/s/">Standard Bank API</a><span className="location-small">Johannesburg, SA</span></div>
+                                            </div>
+                                            <div className="card-block-info">
+                                                <h6><a href="https://developer.standardbank.com/APIMarketplace/s/">Financial Services API</a></h6>
+                                                <div className="mt-5"><span className="card-briefcase">Open Source</span><span className="card-briefcase">60 other candidates have used this</span></div>
+                                                <p className="font-sm color-text-paragraph mt-15">Programmable Banking, through the Integrated Development Environment on Investec Online, allows you to deploy JavaScript code rule which executes before and after every card transaction.</p>
+                                                <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">API</a>
+                                                </div>
+                                                <div className="card-2-bottom mt-30">
+                                                    <div className="row">
+                                                        <div className="col-lg-7 col-7"><span className="card-text-price">Free</span><span className="text-muted"></span></div>
+                                                        <div className="col-lg-5 col-5 text-end">
+                                                            <a href="https://developer.standardbank.com/APIMarketplace/s/" className="btn btn-apply-now">Use now</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="2 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Frontend Developer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Typescript</a><a className="btn btn-grey-small mr-5" href="#">Java</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3">
+                                        <div className="card-grid-2 hover-up">
+                                            <div className="card-grid-2-image-left"><span className="flash"></span>
+                                                <div className="image-box"><img src="https://www.mtn.com/wp-content/uploads/2022/02/MTN_2022_Logo_Black_RGB-sml.jpg" width="80" alt="jobBox" /></div>
+                                                <div className="right-info"><a className="name-job" href="https://developers.mtn.com/">MTN API</a><span className="location-small">Johannesburg, SA</span></div>
+                                            </div>
+                                            <div className="card-block-info">
+                                                <h6><a href="https://developers.mtn.com/">Financial Services API</a></h6>
+                                                <div className="mt-5"><span className="card-briefcase">Open Source</span><span className="card-briefcase">60 other candidates have used this</span></div>
+                                                <p className="font-sm color-text-paragraph mt-15">Programmable Banking, through the Integrated Development Environment on Investec Online, allows you to deploy JavaScript code rule which executes before and after every card transaction.</p>
+                                                <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">API</a>
+                                                </div>
+                                                <div className="card-2-bottom mt-30">
+                                                    <div className="row">
+                                                        <div className="col-lg-7 col-7"><span className="card-text-price">Free</span><span className="text-muted"></span></div>
+                                                        <div className="col-lg-5 col-5 text-end">
+                                                            <a href="https://developers.mtn.com/" className="btn btn-apply-now">Use now</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="3 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Lead Quality Control QA</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">Golang</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3">
+                                        <div className="card-grid-2 hover-up">
+                                            <div className="card-grid-2-image-left"><span className="flash"></span>
+                                                <div className="image-box"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/f5/5b/18/f55b184e-505e-58a9-f127-4830f1ba206b/source/512x512bb.jpg" width="50" alt="jobBox" /></div>
+                                                <div className="right-info"><a className="name-job" href="https://developer.investec.com/za/getting-started">Investec API</a><span className="location-small">Johannesburg, SA</span></div>
+                                            </div>
+                                            <div className="card-block-info">
+                                                <h6><a href="https://developer.investec.com/za/getting-started">Financial Services API</a></h6>
+                                                <div className="mt-5"><span className="card-briefcase">Open Source</span><span className="card-briefcase">60 other candidates have used this</span></div>
+                                                <p className="font-sm color-text-paragraph mt-15">Programmable Banking, through the Integrated Development Environment on Investec Online, allows you to deploy JavaScript code rule which executes before and after every card transaction.</p>
+                                                <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">API</a>
+                                                </div>
+                                                <div className="card-2-bottom mt-30">
+                                                    <div className="row">
+                                                        <div className="col-lg-7 col-7"><span className="card-text-price">Free</span><span className="text-muted"></span></div>
+                                                        <div className="col-lg-5 col-5 text-end">
+                                                            <a href="https://developer.investec.com/za/getting-started" className="btn btn-apply-now">Use now</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="4 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Frontend Developer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Typescript</a><a className="btn btn-grey-small mr-5" href="#">Java</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3">
+                                        <div className="card-grid-2 hover-up">
+                                            <div className="card-grid-2-image-left"><span className="flash"></span>
+                                                <div className="image-box"><img src="https://www.go2ppo.com/wp-content/uploads/2021/03/eskom-logo.png" width="100" alt="jobBox"/></div>
+                                                <div className="right-info"><a className="name-job" href="https://www.npmjs.com/package/eskom-loadshedding-api">Eskom API</a><span className="location-small">Johannesburg, SA</span></div>
+                                            </div>
+                                            <div className="card-block-info">
+                                                <h6><a href="https://www.npmjs.com/package/eskom-loadshedding-api">Electric Services API</a></h6>
+                                                <div className="mt-5"><span className="card-briefcase">Open Source</span><span className="card-briefcase">60 other candidates have used this</span></div>
+                                                <p className="font-sm color-text-paragraph mt-15">Programmable Banking, through the Integrated Development Environment on Investec Online, allows you to deploy JavaScript code rule which executes before and after every card transaction.</p>
+                                                <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">API</a>
+                                                </div>
+                                                <div className="card-2-bottom mt-30">
+                                                    <div className="row">
+                                                        <div className="col-lg-7 col-7"><span className="card-text-price">Free</span><span className="text-muted"></span></div>
+                                                        <div className="col-lg-5 col-5 text-end">
+                                                            <a href="https://www.npmjs.com/package/eskom-loadshedding-api" className="btn btn-apply-now">Use now</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="swiper-slide" data-swiper-slide-index="0" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="1 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Senior System Engineer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">PHP</a><a className="btn btn-grey-small mr-5" href="#">Android    </a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="2 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Frontend Developer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Typescript</a><a className="btn btn-grey-small mr-5" href="#">Java</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="3 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Lead Quality Control QA</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">Golang</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide swiper-slide-next" data-swiper-slide-index="3" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="4 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Frontend Developer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Typescript</a><a className="btn btn-grey-small mr-5" href="#">Java</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="1 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Quora JSC</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Senior System Engineer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Part time</span><span className="card-time">5<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">PHP</a><a className="btn btn-grey-small mr-5" href="#">Android    </a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R800</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="2 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Frontend Developer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Typescript</a><a className="btn btn-grey-small mr-5" href="#">Java</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div><div className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style={{ width: `309px`, marginRight: `30px` }} role="group" aria-label="3 / 4">
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Periscope</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Lead Quality Control QA</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">iOS</a><a className="btn btn-grey-small mr-5" href="#">Laravel</a><a className="btn btn-grey-small mr-5" href="#">Golang</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div><div className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style={{ width: `309px`, marginRight: `30px` }}>
-                                                    <div className="card-grid-2 hover-up">
-                                                        <div className="card-grid-2-image-left"><span className="flash"></span>
-                                                            <div className="image-box"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" /></div>
-                                                            <div className="right-info"><a className="name-job" href="#">Dailymotion</a><span className="location-small">Johannesburg, SA</span></div>
-                                                        </div>
-                                                        <div className="card-block-info">
-                                                            <h6><a href="#">Frontend Developer</a></h6>
-                                                            <div className="mt-5"><span className="card-briefcase">Full time</span><span className="card-time">6<span> minutes ago</span></span></div>
-                                                            <p className="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
-                                                            <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Typescript</a><a className="btn btn-grey-small mr-5" href="#">Java</a>
-                                                            </div>
-                                                            <div className="card-2-bottom mt-30">
-                                                                <div className="row">
-                                                                    <div className="col-lg-7 col-7"><span className="card-text-price">R250</span><span className="text-muted"></span></div>
-                                                                    <div className="col-lg-5 col-5 text-end">
-                                                                        <div className="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div></div>
-                                            <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                                        <div className="swiper-button-next swiper-button-next-4" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ba5abfe4b812dabc"></div>
-                                        <div className="swiper-button-prev swiper-button-prev-4" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ba5abfe4b812dabc"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

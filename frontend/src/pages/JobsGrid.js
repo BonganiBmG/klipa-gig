@@ -129,7 +129,7 @@ const JobsGrid = () => {
                                                         <h6 className="mt-30"><Link to={`/job/${job._id}/detail`}>{job.title}</Link></h6>
                                                        
                                                         <p className="font-sm color-text-paragraph mt-15">{job.description}</p>
-                                                        <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small mr-5" href="#">Figma</a><a className="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                                                        <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">{job.category}</a>
                                                         </div>
                                                         <div className="card-2-bottom mt-30">
                                                             <div className="row">

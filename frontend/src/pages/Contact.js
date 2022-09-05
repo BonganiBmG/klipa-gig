@@ -97,7 +97,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="section-box mt-80">
+      {/* <section className="section-box mt-80">
         <div className="post-loop-grid">
           <div className="container">
             <div className="text-center">
@@ -187,7 +187,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
     </div>
   )
