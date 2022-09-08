@@ -20,7 +20,7 @@ const Home = () => {
             
             <div class="col-lg-2 col-md-4 col-6">
               <div class="mb-4 text-center">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzOWsx-_28nXsFCH44e8fj6dKcT3OqjVtWIlW1Y84pxA&s" height="50" alt=""/>
+                <img src="https://girlcode.co.za/wp-content/uploads/2021/02/GirlCode-PNG-Files-FINAL-26012021-01.png" height="65" alt=""/>
               </div>
             </div>
             <div class="col-lg-2 col-md-4 col-6">
