@@ -9,7 +9,7 @@ const Companies = () => {
           <div className="banner-hero banner-company">
             <div className="block-banner text-center">
               <h3 className="wow animate__ animate__fadeInUp animated" style={{visibility: `visible`, animationName: `fadeInUp`}}>Browse Companies</h3>
-              <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, <br className="d-none d-xl-block"/>atque delectus molestias quis?</div>
+              <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>Search for the latest companies</div>
               <div className="box-list-character">
                 <ul>
                   <li><a className="active" href="#">A</a></li>
@@ -51,7 +51,7 @@ const Companies = () => {
               <div className="content-page">
                 <div className="box-filters-job">
                   <div className="row">
-                    <div className="col-xl-6 col-lg-5"><span className="text-small text-showing">Showing <strong>41-60 </strong>of <strong>944 </strong>jobs</span></div>
+                    <div className="col-xl-6 col-lg-5"><span className="text-small text-showing">Showing companies</span></div>
                     <div className="col-xl-6 col-lg-7 text-lg-end mt-sm-15">
                       <div className="display-flex2">
                         <div className="box-border mr-10"><span className="text-sortby">Show:</span>

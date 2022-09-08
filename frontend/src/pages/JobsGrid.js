@@ -152,12 +152,12 @@ const JobsGrid = () => {
                                 <div className="paginations">
                                     <ul className="pager">
                                         <li><a className="pager-prev" href="#"></a></li>
-                                        <li><a className="pager-number" href="#">1</a></li>
+                                        <li><a className="pager-number active" href="#">1</a></li>
                                         <li><a className="pager-number" href="#">2</a></li>
                                         <li><a className="pager-number" href="#">3</a></li>
                                         <li><a className="pager-number" href="#">4</a></li>
                                         <li><a className="pager-number" href="#">5</a></li>
-                                        <li><a className="pager-number active" href="#">6</a></li>
+                                        <li><a className="pager-number" href="#">6</a></li>
                                         <li><a className="pager-number" href="#">7</a></li>
                                         <li><a className="pager-next" href="#"></a></li>
                                     </ul>

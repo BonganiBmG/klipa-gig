@@ -19,7 +19,7 @@ const TopJobs = () => {
 
     return (
         <div>
-            <section className="section-box mt-70">
+            <section className="section-box mt-30">
                 <div className="container">
                     <div className="text-center">
                         <h2 className="section-title mb-10 wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Jobs of the day</h2>

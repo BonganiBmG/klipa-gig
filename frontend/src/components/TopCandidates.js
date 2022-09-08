@@ -67,7 +67,7 @@ const TopCandidates = () => {
                     <div className="card-grid-2-image-rd online"><a href="#">
                         <figure></figure></a></div>
                     <div className="card-profile pt-10"><a href="#">
-                        <h5>Promise</h5></a><span className="font-xs color-text-mutted">Content Manager</span>
+                        <h5>Promise</h5></a><span className="font-xs color-text-mutted">Social Influencer</span>
                       <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
                     </div>
                   </div>

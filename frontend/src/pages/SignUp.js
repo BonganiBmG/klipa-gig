@@ -45,6 +45,7 @@ const SignUp = () => {
                                     <button className="btn social-login hover-up mb-20"><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/icon-google.svg" alt="jobbox" /><strong>Sign up with Google</strong></button>
                                     <div className="divider-text-center"><span>Or continue with</span></div>
                                 </div>
+                                {message && <h5 className="text-brand-2 mt-30">{message}</h5>}
                                 <form onSubmit={submitHandler} className="login-register text-start mt-20" action="#">
                                     <div className="form-group">
                                         <label className="form-label" htmlFor="input-1">Full Name *</label>
