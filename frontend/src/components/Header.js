@@ -26,7 +26,7 @@ const Header = () => {
                                 <ul className="main-menu">
                                     <li ><a className="active" href="/">Home</a>
                                     </li>
-                                    <li><a href="/jobs-grid">Find Jobs</a>
+                                    <li><a href="/jobs-grid">Jobs Circle</a>
                                     </li>
                                     <li><a href="/companies">Companies</a>
                                     </li>
