@@ -40,7 +40,7 @@ const TopJobs = () => {
                             <div className="tab-pane fade show active" id="tab-job-1" role="tabpanel" aria-labelledby="tab-job-1">
                                 <div className="row">
                                     {jobs?.map((job) => (
-                                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div key={job._id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="card-grid-2 grid-bd-16 hover-up">
                                                 <div className="card-block-info pt-25">
                                                     <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
@@ -71,7 +71,7 @@ const TopJobs = () => {
                             <div className="tab-pane fade" id="tab-job-2" role="tabpanel" aria-labelledby="tab-job-2">
                                 <div className="row">
                                 {jobs?.map((job) => (
-                                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div key={job._id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="card-grid-2 grid-bd-16 hover-up">
                                                 <div className="card-block-info pt-25">
                                                     <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
@@ -102,7 +102,7 @@ const TopJobs = () => {
                             <div className="tab-pane fade" id="tab-job-3" role="tabpanel" aria-labelledby="tab-job-3">
                                 <div className="row">
                                    {jobs?.map((job) => (
-                                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div key={job._id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="card-grid-2 grid-bd-16 hover-up">
                                                 <div className="card-block-info pt-25">
                                                     <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
@@ -133,7 +133,7 @@ const TopJobs = () => {
                             <div className="tab-pane fade" id="tab-job-4" role="tabpanel" aria-labelledby="tab-job-4">
                                 <div className="row">
                                    {jobs?.map((job) => (
-                                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div key={job._id}className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="card-grid-2 grid-bd-16 hover-up">
                                                 <div className="card-block-info pt-25">
                                                     <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
@@ -164,7 +164,7 @@ const TopJobs = () => {
                             <div className="tab-pane fade" id="tab-job-5" role="tabpanel" aria-labelledby="tab-job-5">
                                 <div className="row">
                                    {jobs?.map((job) => (
-                                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div key={ job._id } className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="card-grid-2 grid-bd-16 hover-up">
                                                 <div className="card-block-info pt-25">
                                                     <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
@@ -195,7 +195,7 @@ const TopJobs = () => {
                             <div className="tab-pane fade" id="tab-job-6" role="tabpanel" aria-labelledby="tab-job-6">
                                 <div className="row">
                                    {jobs?.map((job) => (
-                                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div key={job._id } className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="card-grid-2 grid-bd-16 hover-up">
                                                 <div className="card-block-info pt-25">
                                                     <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>

@@ -2,6 +2,10 @@ import asyncHandler from 'express-async-handler'
 import generateToken from '../utils/generateToken.js'
 import User from '../models/userModel.js'
 
+import Token from '../models/tokenModel.js'
+import EmailSend from '../utils/EmailSend.js'
+import crypto from 'crypto'
+
 // @desc    Auth user & get token
 // @route   POST /api/users/login
 // @access  Public
@@ -52,6 +56,20 @@ const registerUser = asyncHandler(async (req, res) => {
       isAdmin: user.isAdmin,
       token: generateToken(user._id),
     })
+
+    //TODO: Complete Token Verification
+    // const token = await new Token({
+    //   userId: user._id,
+    //   token: crypto.randomBytes(32).toString("hex")
+    // }).save()
+
+    // const url = `${process.env.BASE_URL}users/${user._id}/verify/${token.token}`;
+    // const response = await EmailSend(user.email, "Verify Email", url);
+    
+    // res.status(201).json({
+    //   response
+    // })
+
   } else {
     res.status(400)
     throw new Error('Invalid user data')
@@ -167,6 +185,29 @@ const updateUser = asyncHandler(async (req, res) => {
   }
 })
 
+// @desc    Verify user by ID
+// @route   GET /api/users/:id/verify/:token
+// @access  Private/Admin
+const verifyUserById = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.params.id).select('-password')
+
+  if (user) {
+    const token = await Token.findOne({
+      userId: user._id,
+      token: req.params.token
+    });
+
+    if(!token) return res.status(400).send({ message: "Invalid Link" });
+
+    await User.updateOne({ _id: user._id, verified: true });
+    await token.remove();
+
+  } else {
+    res.status(404)
+    throw new Error('User not found')
+  }
+})
+
 export {
   authUser,
   registerUser,
@@ -175,5 +216,6 @@ export {
   getUsers,
   deleteUser,
   getUserById,
+  verifyUserById,
   updateUser,
 }
