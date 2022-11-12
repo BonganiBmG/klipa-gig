@@ -428,7 +428,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
     const url = `${process.env.BASE_URL}users/${user._id}/verify/${token.token}`;
 
-    const response = await EmailSend(user.email, "Verify Email", url, html);
+    const response = await EmailSend(user.email, "Welcome to Klipa App", url, html);
     
     res.status(201).json({
       response
