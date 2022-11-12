@@ -129,7 +129,7 @@ const JobsGrid = () => {
                                                         <h6 className="mt-30"><Link to={`/job/${job._id}/detail`}>{job.title}</Link></h6>
                                                        
                                                         <p className="font-sm color-text-paragraph mt-15">{job.description}</p>
-                                                        <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small mr-5" href="#">Figma</a><a className="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                                                        <div className="mt-30"><a className="btn btn-grey-small mr-5" href="#">{job.category}</a>
                                                         </div>
                                                         <div className="card-2-bottom mt-30">
                                                             <div className="row">
@@ -152,12 +152,12 @@ const JobsGrid = () => {
                                 <div className="paginations">
                                     <ul className="pager">
                                         <li><a className="pager-prev" href="#"></a></li>
-                                        <li><a className="pager-number" href="#">1</a></li>
+                                        <li><a className="pager-number active" href="#">1</a></li>
                                         <li><a className="pager-number" href="#">2</a></li>
                                         <li><a className="pager-number" href="#">3</a></li>
                                         <li><a className="pager-number" href="#">4</a></li>
                                         <li><a className="pager-number" href="#">5</a></li>
-                                        <li><a className="pager-number active" href="#">6</a></li>
+                                        <li><a className="pager-number" href="#">6</a></li>
                                         <li><a className="pager-number" href="#">7</a></li>
                                         <li><a className="pager-next" href="#"></a></li>
                                     </ul>

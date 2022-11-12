@@ -9,6 +9,7 @@ import {
   deleteUser,
   getUserById,
   updateUser,
+  verifyUserById,
 } from '../controllers/userController.js'
 import { protect, admin } from '../middleware/authMiddleware.js'
 
@@ -22,6 +23,10 @@ router
   .route('/:id')
   .delete(protect, admin, deleteUser)
   .get(protect, admin, getUserById)
+  //.get(protect, admin, verifyUserById)
   .put(protect, admin, updateUser)
+router
+  .route("/:id/verify/:token/")
+  .get(protect, admin, verifyUserById)
 
 export default router

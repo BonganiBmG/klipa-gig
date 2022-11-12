@@ -19,7 +19,7 @@ const TopJobs = () => {
 
     return (
         <div>
-            <section className="section-box mt-70">
+            <section className="section-box mt-30">
                 <div className="container">
                     <div className="text-center">
                         <h2 className="section-title mb-10 wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationName: `fadeInUp` }}>Jobs of the day</h2>
@@ -40,15 +40,15 @@ const TopJobs = () => {
                             <div className="tab-pane fade show active" id="tab-job-1" role="tabpanel" aria-labelledby="tab-job-1">
                                 <div className="row">
                                     {jobs?.map((job) => (
-                                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div key={job._id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="card-grid-2 grid-bd-16 hover-up">
                                                 <div className="card-block-info pt-25">
                                                     <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
                                                    
-                                                    <div className="mb-20"><span className="card-briefcase mr-15">{job.category}</span><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+                                                    <div className="mb-20"><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
 
                                                     <span className="mt-40">{job.description}</span>
-                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
+                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">{job.category}</a>
                                                     </div>
                                                     <div className="card-2-bottom mt-20">
                                                         <div className="row">
@@ -70,1342 +70,157 @@ const TopJobs = () => {
                             </div>
                             <div className="tab-pane fade" id="tab-job-2" role="tabpanel" aria-labelledby="tab-job-2">
                                 <div className="row">
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                {jobs?.map((job) => (
+                                        <div key={job._id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                            <div className="card-grid-2 grid-bd-16 hover-up">
+                                                <div className="card-block-info pt-25">
+                                                    <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
+                                                   
+                                                    <div className="mb-20"><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+
+                                                    <span className="mt-40">{job.description}</span>
+                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">{job.category}</a>
+                                                    </div>
+                                                    <div className="card-2-bottom mt-20">
+                                                        <div className="row">
+                                                            <div className="col-lg-7 col-md-7">
+                                                                <div className="d-flex"><img className="img-rounded" src={logo} alt="jobBox" />
+                                                                    <div className="info-right-img">
+                                                                        <h6 className="color-brand-1 lh-14">{job.deadline ? (<>Deadline: <ReactTimeAgo date={job.deadline} locale="en-US"/></>) : (<span>Deadline</span>)}</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                            <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R{job.budget}</span><span className="text-muted"></span></div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Java Software Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Frontend Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Lead Quality Control QA</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="tab-job-3" role="tabpanel" aria-labelledby="tab-job-3">
                                 <div className="row">
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                   {jobs?.map((job) => (
+                                        <div key={job._id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                            <div className="card-grid-2 grid-bd-16 hover-up">
+                                                <div className="card-block-info pt-25">
+                                                    <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
+                                                   
+                                                    <div className="mb-20"><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+
+                                                    <span className="mt-40">{job.description}</span>
+                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">{job.category}</a>
+                                                    </div>
+                                                    <div className="card-2-bottom mt-20">
+                                                        <div className="row">
+                                                            <div className="col-lg-7 col-md-7">
+                                                                <div className="d-flex"><img className="img-rounded" src={logo} alt="jobBox" />
+                                                                    <div className="info-right-img">
+                                                                        <h6 className="color-brand-1 lh-14">{job.deadline ? (<>Deadline: <ReactTimeAgo date={job.deadline} locale="en-US"/></>) : (<span>Deadline</span>)}</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                            <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R{job.budget}</span><span className="text-muted"></span></div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Java Software Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Frontend Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Lead Quality Control QA</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="tab-job-4" role="tabpanel" aria-labelledby="tab-job-4">
                                 <div className="row">
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                   {jobs?.map((job) => (
+                                        <div key={job._id}className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                            <div className="card-grid-2 grid-bd-16 hover-up">
+                                                <div className="card-block-info pt-25">
+                                                    <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
+                                                   
+                                                    <div className="mb-20"><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+
+                                                    <span className="mt-40">{job.description}</span>
+                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">{job.category}</a>
+                                                    </div>
+                                                    <div className="card-2-bottom mt-20">
+                                                        <div className="row">
+                                                            <div className="col-lg-7 col-md-7">
+                                                                <div className="d-flex"><img className="img-rounded" src={logo} alt="jobBox" />
+                                                                    <div className="info-right-img">
+                                                                        <h6 className="color-brand-1 lh-14">{job.deadline ? (<>Deadline: <ReactTimeAgo date={job.deadline} locale="en-US"/></>) : (<span>Deadline</span>)}</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                            <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R{job.budget}</span><span className="text-muted"></span></div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Java Software Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Frontend Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Lead Quality Control QA</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="tab-job-5" role="tabpanel" aria-labelledby="tab-job-5">
                                 <div className="row">
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                   {jobs?.map((job) => (
+                                        <div key={ job._id } className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                            <div className="card-grid-2 grid-bd-16 hover-up">
+                                                <div className="card-block-info pt-25">
+                                                    <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
+                                                   
+                                                    <div className="mb-20"><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+
+                                                    <span className="mt-40">{job.description}</span>
+                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">{job.category}</a>
+                                                    </div>
+                                                    <div className="card-2-bottom mt-20">
+                                                        <div className="row">
+                                                            <div className="col-lg-7 col-md-7">
+                                                                <div className="d-flex"><img className="img-rounded" src={logo} alt="jobBox" />
+                                                                    <div className="info-right-img">
+                                                                        <h6 className="color-brand-1 lh-14">{job.deadline ? (<>Deadline: <ReactTimeAgo date={job.deadline} locale="en-US"/></>) : (<span>Deadline</span>)}</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                            <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R{job.budget}</span><span className="text-muted"></span></div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Java Software Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Frontend Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Lead Quality Control QA</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="tab-job-6" role="tabpanel" aria-labelledby="tab-job-6">
                                 <div className="row">
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher remote</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy                        </a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                   {jobs?.map((job) => (
+                                        <div key={job._id } className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                            <div className="card-grid-2 grid-bd-16 hover-up">
+                                                <div className="card-block-info pt-25">
+                                                    <h6><a href={`/job/${job._id}/detail`}>{job.title}</a></h6>
+                                                   
+                                                    <div className="mb-20"><span className="card-time"><ReactTimeAgo date={job.createdAt} locale="en-US"/></span></div>
+
+                                                    <span className="mt-40">{job.description}</span>
+                                                    <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">{job.category}</a>
+                                                    </div>
+                                                    <div className="card-2-bottom mt-20">
+                                                        <div className="row">
+                                                            <div className="col-lg-7 col-md-7">
+                                                                <div className="d-flex"><img className="img-rounded" src={logo} alt="jobBox" />
+                                                                    <div className="info-right-img">
+                                                                        <h6 className="color-brand-1 lh-14">{job.deadline ? (<>Deadline: <ReactTimeAgo date={job.deadline} locale="en-US"/></>) : (<span>Deadline</span>)}</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                            <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R{job.budget}</span><span className="text-muted"></span></div>
                                                         </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Java</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">C++</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Swift</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UI / UX Designer fulltime</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">PHP</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Python</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">JavaScript</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R350</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Full Stack Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R100</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Java Software Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R50</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Frontend Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R120</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R150</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R160</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Lead Quality Control QA</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-9.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">UX Designer &amp; Researcher</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-10.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">React Native Web Developer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <div className="card-grid-2 grid-bd-16 hover-up">
-                                            <div className="card-block-info pt-25">
-                                                <h6><a href="#">Senior System Engineer</a></h6>
-                                                <div className="mt-5"><span className="card-briefcase mr-15">Remote</span><span className="card-time">3 mins ago</span></div>
-                                                <div className="mt-20 border-bottom pb-20"><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Illustrator</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Adobe XD</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Figma</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Sketch</a><a className="btn btn-grey-small bg-14 mb-5 mr-5" href="#">Lunacy</a>
-                                                </div>
-                                                <div className="card-2-bottom mt-20">
-                                                    <div className="row">
-                                                        <div className="col-lg-7 col-md-7">
-                                                            <div className="d-flex"><img className="img-rounded" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox" />
-                                                                <div className="info-right-img">
-                                                                    <h6 className="color-brand-1 lh-14">Linkedin</h6><span className="card-location font-xxs pl-15 color-text-paragraph-2">Johannesburg, SA</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-5 col-md-5 text-end"><span className="card-text-price">R200</span><span className="text-muted"></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>

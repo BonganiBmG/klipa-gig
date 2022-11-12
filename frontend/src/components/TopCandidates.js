@@ -22,7 +22,7 @@ const TopCandidates = () => {
                     </div>
                   </div>
                   <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
+                    <p className="font-xs color-text-paragraph-2">Web Developer</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                       <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="#">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Digital</a>
                       </div>
@@ -47,7 +47,7 @@ const TopCandidates = () => {
                     </div>
                   </div>
                   <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
+                    <p className="font-xs color-text-paragraph-2">Web Developer</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                       <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="#">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Digital</a>
                       </div>
@@ -67,12 +67,12 @@ const TopCandidates = () => {
                     <div className="card-grid-2-image-rd online"><a href="#">
                         <figure></figure></a></div>
                     <div className="card-profile pt-10"><a href="#">
-                        <h5>Promise</h5></a><span className="font-xs color-text-mutted">Content Manager</span>
+                        <h5>Promise</h5></a><span className="font-xs color-text-mutted">Social Influencer</span>
                       <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
                     </div>
                   </div>
                   <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
+                    <p className="font-xs color-text-paragraph-2">Web Developer</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                       <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="#">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Digital</a>
                       </div>
@@ -97,7 +97,7 @@ const TopCandidates = () => {
                     </div>
                   </div>
                   <div className="card-block-info">
-                    <p className="font-xs color-text-paragraph-2">| Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, atque delectus molestias quis?</p>
+                    <p className="font-xs color-text-paragraph-2">Web Developer</p>
                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                       <div className="text-start"><a className="btn btn-tags-sm mb-10 mr-5" href="#">Figma</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Adobe XD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">PSD</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">App</a><a className="btn btn-tags-sm mb-10 mr-5" href="#">Digital</a>
                       </div>

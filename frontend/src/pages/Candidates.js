@@ -84,7 +84,7 @@ const Candidates = () => {
                     <div className="card-grid-2-image-rd online"><a>
                         <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user7.png"/></figure></a></div>
                     <div className="card-profile pt-10"><a>
-                        <h5>Jerome</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
+                        <h5>Tiyani</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
                       <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
                     </div>
                   </div>
@@ -134,7 +134,7 @@ const Candidates = () => {
                     <div className="card-grid-2-image-rd online"><a>
                         <figure><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/candidates/user14.png"/></figure></a></div>
                     <div className="card-profile pt-10"><a>
-                        <h5>Hawkins</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
+                        <h5>Njabulo</h5></a><span className="font-xs color-text-mutted">UI/UX Designer</span>
                       <div className="rate-reviews-small pt-5"><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg" alt="jobBox"/></span><span className="ml-10 color-text-mutted font-xs">(65)</span></div>
                     </div>
                   </div>

@@ -33,7 +33,7 @@ const CreateJob = () => {
     const { userInfo } = userLogin
 
     useEffect(() => {
-         if (!userInfo || !userInfo.isAdmin) {
+        if (!userInfo || !userInfo.isAdmin) {
             nav('/signin')
         }
 
@@ -83,7 +83,7 @@ const CreateJob = () => {
                 title,
                 description,
                 category,
-                budget, 
+                budget,
                 deadline
             })
         )
@@ -123,13 +123,14 @@ const CreateJob = () => {
                                             onChange={(e) => setCategory(e.target.value)}
                                             placeholder="Graphic Design" /> */}
                                         <select className="form-control" value={category} onChange={(e) => setCategory(e.target.value)}>
+                                            <option disabled selected value> -- select an option -- </option>
                                             <option value="Web Development">Web Development</option>
                                             <option value="Marketing and Sales">Marketing and Sales</option>
                                             <option value="Graphic Design">Graphic Design</option>
                                             <option value="Social Influencer Collaborations">Social Influencer Collaborations</option>
                                             <option value="Promotions">Promotions</option>
                                             <option value="Content Writer">Content Writer</option>
-                                            
+
                                         </select>
                                     </div>
                                     <div className="form-group">

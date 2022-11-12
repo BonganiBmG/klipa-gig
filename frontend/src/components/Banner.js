@@ -19,7 +19,7 @@ const Banner = () => {
         <div className="banner-hero hero-2">
           <div className="banner-inner">
             <div className="block-banner">
-              <h1 className="text-42 color-white wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationame: `fadeInUp` }}>Hello <span className="color-green">{userInfo?.name}</span><br className="d-none d-lg-block" />Find your next job, earn cash</h1>
+              <h1 className="text-42 color-white wow animate__ animate__fadeInUp animated" style={{ visibility: `visible`, animationame: `fadeInUp` }}>Hello <span className="color-green">{userInfo?.name}</span><br className="d-none d-lg-block" />Find developer gigs, earn cash</h1>
               <div className="form-find mt-40 wow animate__ animate__fadeIn animated" data-wow-delay=".2s" style={{ visibility: `visible`, animationDelay: `0.2s`, animationName: `fadeIn` }}>
                 <form onSubmit={submitHandler}>
                   <input className="form-input input-keysearch mr-10" type="text" placeholder="I need a website" />

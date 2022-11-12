@@ -9,7 +9,7 @@ const Companies = () => {
           <div className="banner-hero banner-company">
             <div className="block-banner text-center">
               <h3 className="wow animate__ animate__fadeInUp animated" style={{visibility: `visible`, animationName: `fadeInUp`}}>Browse Companies</h3>
-              <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni, <br className="d-none d-xl-block"/>atque delectus molestias quis?</div>
+              <div className="font-sm color-text-paragraph-2 mt-10 wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style={{visibility: `visible`, animationDelay: `0.1s`, animationName: `fadeInUp`}}>Search for the latest companies</div>
               <div className="box-list-character">
                 <ul>
                   <li><a className="active" href="#">A</a></li>
@@ -51,7 +51,7 @@ const Companies = () => {
               <div className="content-page">
                 <div className="box-filters-job">
                   <div className="row">
-                    <div className="col-xl-6 col-lg-5"><span className="text-small text-showing">Showing <strong>41-60 </strong>of <strong>944 </strong>jobs</span></div>
+                    <div className="col-xl-6 col-lg-5"><span className="text-small text-showing">Showing companies</span></div>
                     <div className="col-xl-6 col-lg-7 text-lg-end mt-sm-15">
                       <div className="display-flex2">
                         <div className="box-border mr-10"><span className="text-sortby">Show:</span>
@@ -82,9 +82,9 @@ const Companies = () => {
                 <div className="row">
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__ animate__fadeIn animated" style={{visibility: `visible`, animationName: `fadeIn`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-1.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://www.mtn.com/wp-content/uploads/2022/02/MTN_2022_Logo_Black_RGB-sml.jpg" width="100" alt="jobBox"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Car Toys</a></h5>
+                        <h5 className="font-bold"><a>MTN</a></h5>
                         <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>66</span><span>)</span></span></div><span className="card-location">Johannesburg, SA</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>12</span><span> Jobs Open</span></a></div>
                       </div>
@@ -92,9 +92,9 @@ const Companies = () => {
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__ animate__fadeIn animated" style={{visibility: `visible`, animationName: `fadeIn`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-2.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://www.khula.co.za/static/media/khula-logo-slogan.04bff781.svg" alt="jobBox" width="150"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Carols Daughter</a></h5>
+                        <h5 className="font-bold"><a>KHULA!</a></h5>
                         <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>18</span><span>)</span></span></div><span className="card-location">Pretoria, SA</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>25</span><span> Jobs Open</span></a></div>
                       </div>
@@ -102,19 +102,19 @@ const Companies = () => {
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__ animate__fadeIn animated" style={{visibility: `visible`, animationName: `fadeIn`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-3.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://static.wixstatic.com/media/ca06a1_a87e41c20d3d461f8a6474a4cbcf2f93~mv2.png/v1/crop/x_0,y_0,w_819,h_569/fill/w_200,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ambani%20new%20logo.png" width="100" alt="jobBox"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Amazon</a></h5>
-                        <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>52</span><span>)</span></span></div><span className="card-location">Tokyo,Japan</span>
+                        <h5 className="font-bold"><a>Ambani</a></h5>
+                        <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>52</span><span>)</span></span></div><span className="card-location">Johannesburg, South Africa</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>54</span><span> Jobs Open</span></a></div>
                       </div>
                     </div>
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__ animate__fadeIn animated" style={{visibility: `visible`, animationName: `fadeIn`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-4.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://play-lh.googleusercontent.com/HGYstVHW6MFjRnm63dmnbb8mAhzd548kxuiAh7MbWqLKtO7nNaS66i8HUj28QM2sqw" width="80" alt="jobBox"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Baseball Savings</a></h5>
+                        <h5 className="font-bold"><a>Uniwise</a></h5>
                         <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>85</span><span>)</span></span></div><span className="card-location">Centurion, SA</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>6</span><span> Jobs Open</span></a></div>
                       </div>
@@ -122,19 +122,19 @@ const Companies = () => {
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__ animate__fadeIn animated" style={{visibility: `visible`, animationName: `fadeIn`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-5.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://signup.hellopay.co.za/assets/images/logo/Hellopay%20Caps-04.png" alt="jobBox" width="150"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Ashford</a></h5>
-                        <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>25</span><span>)</span></span></div><span className="card-location">Toronto, Italia</span>
+                        <h5 className="font-bold"><a>Hellopay</a></h5>
+                        <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>25</span><span>)</span></span></div><span className="card-location">Midrand, SA</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>67</span><span> Jobs Open</span></a></div>
                       </div>
                     </div>
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__ animate__fadeIn animated" style={{visibility: `visible`, animationName: `fadeIn`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://play-lh.googleusercontent.com/luMNKhkEuvgveaW85q11d60ubzRuqy-gjcQprDEmC16ehW_8XYsZRUW3Dq_ueTX4ow" width="100" alt="jobBox"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Callaway Golf</a></h5>
+                        <h5 className="font-bold"><a>Kazi App</a></h5>
                         <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>34</span><span>)</span></span></div><span className="card-location">Pretoria, SA</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>45</span><span> Jobs Open</span></a></div>
                       </div>
@@ -142,19 +142,19 @@ const Companies = () => {
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__ animate__fadeIn animated" style={{visibility: `visible`, animationName: `fadeIn`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-7.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://play-lh.googleusercontent.com/xF1nxQmWn-zdWmgo2WHbX4nEeLA9Gmx4Rg2RdqtbsTYiJvxPS_qnsplX2FWFKQwLeg" width="100" alt="jobBox"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Percepta</a></h5>
-                        <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>97</span><span>)</span></span></div><span className="card-location">Chinatown, Singpore</span>
+                        <h5 className="font-bold"><a>Mo Wash</a></h5>
+                        <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>97</span><span>)</span></span></div><span className="card-location">Bedfordview, SA</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>64</span><span> Jobs Open</span></a></div>
                       </div>
                     </div>
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__ animate__fadeIn animated" style={{visibility: `visible`, animationName: `fadeIn`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-8.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://images.squarespace-cdn.com/content/v1/5f40e1fa8c50b9136fbee089/1616148969070-G8P2YSFTK07VH5HUFO23/Vula_dark_icon_circle%402x.png?format=1500w" width="100" alt="jobBox"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Exela Movers</a></h5>
+                        <h5 className="font-bold"><a>Vula Mobile</a></h5>
                         <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>67</span><span>)</span></span></div><span className="card-location">Johannesburg, SA</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>87</span><span> Jobs Open</span></a></div>
                       </div>
@@ -162,9 +162,9 @@ const Companies = () => {
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="card-grid-1 hover-up wow animate__animated animate__fadeIn" style={{visibility: `visible`, animationName: `none`}}>
-                      <div className="image-box"><a><img src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/brands/brand-6.png" alt="jobBox"/></a></div>
+                      <div className="image-box"><a><img src="https://murimi247.com/wp-content/uploads/2021/01/farming_in_bindura_murimi-247-logo.png" width="150" alt="jobBox"/></a></div>
                       <div className="info-text mt-10">
-                        <h5 className="font-bold"><a>Callaway Golf</a></h5>
+                        <h5 className="font-bold"><a>Murimi</a></h5>
                         <div className="mt-5"><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><img alt="jobBox" src="http://wp.alithemes.com/html/jobbox/demos/assets/imgs/template/icons/star.svg"/><span className="font-xs color-text-mutted ml-10"><span>(</span><span>34</span><span>)</span></span></div><span className="card-location">Pretoria, SA</span>
                         <div className="mt-30"><a className="btn btn-grey-big"><span>45</span><span> Jobs Open</span></a></div>
                       </div>
@@ -175,12 +175,12 @@ const Companies = () => {
               <div className="paginations">
                 <ul className="pager">
                   <li><a className="pager-prev" href="#"></a></li>
-                  <li><a className="pager-number" href="#">1</a></li>
+                  <li><a className="pager-number active" href="#">1</a></li>
                   <li><a className="pager-number" href="#">2</a></li>
                   <li><a className="pager-number" href="#">3</a></li>
                   <li><a className="pager-number" href="#">4</a></li>
                   <li><a className="pager-number" href="#">5</a></li>
-                  <li><a className="pager-number active" href="#">6</a></li>
+                  <li><a className="pager-number" href="#">6</a></li>
                   <li><a className="pager-number" href="#">7</a></li>
                   <li><a className="pager-next" href="#"></a></li>
                 </ul>
